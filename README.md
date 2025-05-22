@@ -172,18 +172,110 @@ Support for various types of symmetries. Note that support for multiple features
 
 Table key:
 
-* *The unitary group $\mathrm{U}(1)$: * Indicates support for the unitary group of degree one, which is the most commonly used symmetry. It typically enforces the conservation of particle numbers (total electrons or separate spin counts) and total spin magnetization.
-
-* *Cyclic groups ($\mathbb{Z}$): * Indicates support for either $\mathbb{Z}_2$ or more general $\mathbb{Z}_n$ symmetries. A common usage for $\mathbb{Z}_2$ is to enforce the spin-flip (parity) symmetry in the transverse-field Ising model, where flipping all spins leaves the Hamiltonian unchanged. The more general $\mathbb{Z}_n$ group is common in models with an $n$-fold rotational or cyclic invariance.
-
-* *Special unitary groups ($\mathrm{SU}$): * Indicates support for either $\mathrm{SU}(2)$ or more generally $\mathrm{SU}(n)$. The $\mathrm{SU}(2)$ group is most common and is often applied to preserve the total spin, often referred to as spin $\mathrm{SU}(2)$. An example of $\mathrm{SU}(n)$ is the channel $\mathrm{SU}(3)$ symmetry considered by Weichselbaum.
-
-* *Point groups ($\mathrm{P}$): * Indicates support for abelian point group symmetries $\mathrm{P} \in \{C_1, C_i, C_2, C_s, C_{2h}, D_2, C_{2v}, D_{2h}\}$ with real-valued character tables. They are often used for molecular systems to enforce spatial symmetries.
-
-* *Fermion parity ($\mathbb{Z}_2^\mathrm{f}$): * Indicates support for the fermion parity, which captures the anti-commuting nature of fermionic degrees of freedom. The parity is a $\mathbb{Z}_2$ quantum number that yields an additional sign when exchanging two fermions (each carrying odd parity).
+* *The unitary group * $\mathrm{U}(1)$: Indicates support for the unitary group of degree one, which is the most commonly used symmetry. It typically enforces the conservation of particle numbers (total electrons or separate spin counts) and total spin magnetization.
+* *Cyclic groups * ($\mathbb{Z}$): Indicates support for either $\mathbb{Z}_2$ or more general $\mathbb{Z}_n$ symmetries. A common usage for $\mathbb{Z}_2$ is to enforce the spin-flip (parity) symmetry in the transverse-field Ising model, where flipping all spins leaves the Hamiltonian unchanged. The more general $\mathbb{Z}_n$ group is common in models with an $n$-fold rotational or cyclic invariance.
+* *Special unitary groups * ($\mathrm{SU}$): Indicates support for either $\mathrm{SU}(2)$ or more generally $\mathrm{SU}(n)$. The $\mathrm{SU}(2)$ group is most common and is often applied to preserve the total spin, often referred to as spin $\mathrm{SU}(2)$. An example of $\mathrm{SU}(n)$ is the channel $\mathrm{SU}(3)$ symmetry considered by Weichselbaum.
+* *Point groups * ($\mathrm{P}$): Indicates support for abelian point group symmetries $\mathrm{P} \in \{C_1, C_i, C_2, C_s, C_{2h}, D_2, C_{2v}, D_{2h}\}$ with real-valued character tables. They are often used for molecular systems to enforce spatial symmetries.
+* *Fermion parity * ($\mathbb{Z}_2^\mathrm{f}$): Indicates support for the fermion parity, which captures the anti-commuting nature of fermionic degrees of freedom. The parity is a $\mathbb{Z}_2$ quantum number that yields an additional sign when exchanging two fermions (each carrying odd parity).
 
 * *Other:* Indicates support for less common symmetries, such as the special orthogonal group $\mathrm{SO}(n)$, the symplectic group $\mathrm{Sp}(2n)$, and Anyonic symmetries. Anyons are particles with non-trivial exchange statistics that are neither fermions nor bosons.
-* 
+
+## Hamiltonians
+
+Support for custom Hamiltonian constructions and the variety of fields for built-in models.
+
+| ID | Name | Construction Custom | Construction Operator | Built-in |
+|---|---|---|---|---|
+| 1 | ALPS DMRG | &#10003; | &#10003; | Specific |
+| 2 | ALPS MPS | - | - | Specific |
+| 3 | BAGEL | - | - | Specific |
+| 4 | Block2 | &#10003; | &#10003; | Broad |
+| 5 | CheMPS2 | - | - | Specific |
+| 6 | ChemTensor | &#10003; | &#10003; | Broad |
+| 7 | Chen et al. | - | - | Broad |
+| 8 | Cytnx | &#10003; | &#10003; | - |
+| 9 | DMRG-Budapest | &#10003; | &#10003; | Broad |
+| 10 | DMRG++ | &#10003; | - | Specific |
+| 11 | DMRGPy | &#10003; | &#10003; | - |
+| 12 | FOCUS | - | - | Specific |
+| 13 | Hong et al. | - | - | Specific |
+| 14 | ITensor | &#10003; | &#10003; | - |
+| 15 | ITensorMPS.jl | &#10003; | &#10003; | - |
+| 16 | Kylin | - | - | Specific |
+| 17 | MOLMPS | - | - | Broad |
+| 18 | MPSKit.jl | &#10003; | &#10003; | Specific |
+| 19 | MPToolkit | &#10003; | - | Broad |
+| 20 | OSMPS | &#10003; | &#10003; | - |
+| 21 | PyTeNet | &#10003; | &#10003; | Broad |
+| 22 | QCMaquis | - | - | Broad |
+| 23 | QSpace | &#10003; | &#10003; | Specific |
+| 24 | Quantum TEA | &#10003; | &#10003; | Specific |
+| 25 | quimb | &#10003; | &#10003; | Specific |
+| 26 | Renormalizer | &#10003; | &#10003; | Broad |
+| 27 | SeeMPS2 | &#10003; | &#10003; | - |
+| 28 | SUNDMRG.jl | - | - | Specific |
+| 29 | SymMPS | &#10003; | - | - |
+| 30 | SyTen | &#10003; | - | - |
+| 31 | TeNPy | &#10003; | &#10003; | Broad |
+| 32 | tensor-tools | &#10003; | &#10003; | - |
+| 33 | TensorTrack | &#10003; | &#10003; | Specific |
+| 34 | UltraDMRG | &#10003; | &#10003; | - |
+| 35 | xDMRG++ | - | - | Specific |
+
+
+Table key:
+
+* Firstly, we only indicate the presence of some interface for custom Hamiltonian construction and do not distinguish based on their implementation. Moreover, standard operators include spin, spin exchange, bosonic, and fermionic operators for the operator-type construction interfaces. But again, we do not make distinctions based on how many or which operators each package offers.
+* Secondly, we acknowledge that classifying the variety of built-in Hamiltonians is somewhat subjective. Currently, the column reflects the developers' views on their package. We provided them with the following examples of what we considered fields: quantum chemistry, condensed matter physics, and nuclear structure.
+
+
+## Eigensolvers
+
+The eigensolvers used by each package and a comment for bespoke implementations.
+
+| ID | Name | Eigensolver | Comment |
+|---|---|---|---|
+| 1 | ALPS DMRG | Own | Lanczos  |
+| 2 | ALPS MPS | IETL in ALPS | Jacobi–Davidson  |
+| 3 | BAGEL | Own | Davidson |
+| 4 | Block2 | Own | Davidson  |
+| 5 | CheMPS2 | Own | Davidson  |
+| 6 | ChemTensor | Own | Lanczos |
+| 7 | Chen et al. | Own | Davidson |
+| 8 | Cytnx | Own | Lanczos |
+| 9 | DMRG-Budapest | Own, ARPACK | Lanczos, Davidson, etc. |
+| 10 | DMRG++ | Own | Lanczos |
+| 11 | DMRGPy | ITensor (C++/Julia) | - |
+| 12 | FOCUS | Own | Davidson |
+| 13 | Hong et al. | Own | Lanczos |
+| 14 | ITensor | Own | Davidson |
+| 15 | ITensorMPS.jl | KrylovKit.jl | Lanczos, Arnoldi |
+| 16 | Kylin | Own | Lanczos, Davidson |
+| 17 | MOLMPS | Own | Davidson |
+| 18 | MPSKit.jl | KrylovKit.jl | Lanczos, Arnoldi |
+| 19 | MPToolkit | ARPACK | Lanczos, Davidson, etc. |
+| 20 | OSMPS | Own, ARPACK | Lanczos |
+| 21 | PyTeNet | Own | Lanczos |
+| 22 | QCMaquis | ALPS | Jacobi–Davidson |
+| 23 | QSpace | Own | Davidson |
+| 24 | Quantum TEA | Own, SciPy | Lanczos |
+| 25 | quimb | SciPy, slepc4py | Krylov-Schur, Davidson, etc. |
+| 26 | Renormalizer | Own, SciPy | Davidson |
+| 27 | SeeMPS2 | SciPy | Lanczos |
+| 28 | SUNDMRG.jl | Own | Lanczos |
+| 29 | SymMPS | Own | Lanczos |
+| 30 | SyTen | Own | Lanczos, Davidson |
+| 31 | TeNPy | Own, SciPy | Lanczos |
+| 32 | tensor-tools | Own | Davidson |
+| 33 | TensorTrack | Own | Krylov-Schur |
+| 34 | UltraDMRG | Own | Lanczos |
+| 35 | xDMRG++ | PRIMME | Arnoldi, Davidson, etc. |
+
+Table key:
+
+* **Eigensolver:** Indicates if the eigensolver is a bespoke implementation or provided by some external dependency. Some packages include both, often implementing their own sparse solver complemented by an external dense solver.
+* **Comment:** Short comment regarding the method used, mainly for packages that implement their own eigensolver, as they can be less flexible regarding method changes.
+  
 
 ## References
 
