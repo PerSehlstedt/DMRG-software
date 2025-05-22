@@ -69,3 +69,69 @@ Table Key:
 * **Symmetry Support (Sym.):** Indicates whether the package is symmetry-adapted to support abelian (A) and/or non-abelian (NA) symmetries or not.
 
 * **High-Performance Computing (HPC):** Indicates support for HPC platforms, categorized as shared-memory parallelism (SM), distributed-memory parallelism (DM), and single- (S) or multi- (M) GPU acceleration (GPU).
+  
+Note: Support for multiple features does not imply that they can be utilized simultaneously.
+
+
+## Parallelization strategies
+
+Support for parallelism strategies and mixed-precision optimization techniques.
+
+| ID | Name | HPC | | | Parallelism | | | | | MP |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| | | SM | DM | GPU | i | ii | iii | iv | v | |
+| 1 | ALPS DMRG | ✓ | - | - | ✓ | - | - | - | - | - |
+| 2 | ALPS MPS | ✓ | - | - | ✓ | ✓ | - | - | - | - |
+| 3 | BAGEL | ✓ | ✓ | - | ✓ | - | - | - | - | - |
+| 4 | Block2 | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| 5 | CheMPS2 | ✓ | ✓ | - | - | ✓ | ✓ | - | - | - |
+| 6 | ChemTensor | ✓ | - | - | - | ✓ | - | ✓ | - | - |
+| 7 | Chen et al. | ✓ | - | S | ✓ | ✓ | - | - | ✓ | - |
+| 8 | Cytnx | ✓ | - | S | ✓ | ✓ | ✓ | - | - | - |
+| 9 | DMRG-Budapest | ✓ | ✓ | M | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| 10 | DMRG++ | ✓ | - | S | ✓ | ✓ | - | - | - | - |
+| 11 | DMRGPy | ✓ | - | - | ✓ | - | - | - | - | - |
+| 12 | FOCUS | ✓ | ✓ | M | ✓ | ✓ | ✓ | - | - | - |
+| 13 | Hong et al. | - | - | S | ✓ | - | - | - | - | - |
+| 14 | ITensor | ✓ | - | - | ✓ | ✓ | - | - | - | - |
+| 15 | ITensorMPS.jl | ✓ | - | S | ✓ | ✓ | - | - | - | ✓ |
+| 16 | Kylin | ✓ | - | - | - | ✓ | ✓ | - | - | ✓ |
+| 17 | MOLMPS | ✓ | ✓ | S | ✓ | ✓ | ✓ | - | - | - |
+| 18 | MPSKit.jl | ✓ | - | - | ✓ | ✓ | - | ✓ | - | - |
+| 19 | MPToolkit | ✓ | - | - | ✓ | ✓ | - | - | - | - |
+| 20 | OSMPS | ✓ | ✓ | - | ✓ | ✓ | - | - | - | - |
+| 21 | PyTeNet | ✓ | - | - | ✓ | - | - | - | - | - |
+| 22 | QCMaquis | ✓ | - | - | - | ✓ | ✓ | ✓ | - | - |
+| 23 | QSpace | ✓ | - | - | ✓ | ✓ | - | - | - | ✓ |
+| 24 | Quantum TEA | ✓ | - | S | ✓ | - | - | - | - | ✓ |
+| 25 | quimb | ✓ | - | - | ✓ | - | - | - | - | - |
+| 26 | Renormalizer | ✓ | - | S | ✓ | - | - | - | - | - |
+| 27 | SeeMPS2 | ✓ | - | - | ✓ | - | - | - | - | - |
+| 28 | SUNDMRG.jl | ✓ | ✓ | S | ✓ | ✓ | - | - | - | - |
+| 29 | SymMPS | ✓ | - | - | ✓ | ✓ | - | - | - | - |
+| 30 | SyTen | ✓ | ✓ | S | ✓ | ✓ | - | ✓ | ✓ | - |
+| 31 | TeNPy | ✓ | ✓ | - | ✓ | ✓ | - | ✓ | - | - |
+| 32 | tensor-tools | ✓ | ✓ | - | ✓ | - | - | - | - | - |
+| 33 | TensorTrack | ✓ | - | - | ✓ | - | - | - | - | - |
+| 34 | UltraDMRG | ✓ | ✓ | S | ✓ | ✓ | - | ✓ | - | - |
+| 35 | xDMRG++ | ✓ | - | - | ✓ | - | - | - | - | - |
+
+Table key:
+
+We now expand on the HPC aspects introduced in the High-Level Overview to describe parallelization strategies and other optimization techniques. We closely follow the classification summary and five-level hierarchy of parallelism first introduced by Zhai and Chan [28] and then further discussed by Tian and Ma [31]. The following describes the HPC strategies:
+
+* **Parallel strategies (Parallelism):** Indicates support for the following types of parallelism:
+    * **Parallelism within matrix operations (i):** The most fine-grained and lowest-level source of parallelism is the data parallelism found primarily within the matrix–matrix and matrix–vector multiplications that underpin the tensor algebra in the DMRG algorithm.
+    * **Parallelism over symmetry sectors (ii):** The block-sparse tensor representations in symmetry-adapted DMRG implementations enable parallelism across symmetry sectors. The calculations on different blocks are independent, allowing them to run simultaneously.
+    * **Parallelism over normal and complementary operators (iii):** In ab initio DMRG, the left-right decomposition of the Hamiltonian is expressed as a summation of products of normal and complementary operators. These operators are distributed over threads and processors, processing the corresponding calculations concurrently.
+    * **Parallelism over a sum of sub-Hamiltonians (iv):** The Hamiltonian is rewritten as a sum of sub-Hamiltonians such that each term can be manipulated independently. This coarse-grained, high-level parallelism is easily expressed in the MPO formalism and adds little communication overhead.
+    * **Parallelism over sites (v):** The DMRG sequentially sweeps back and forth along a path. The path can be partitioned into sections that can be processed simultaneously at the expense of extra communication at the section boundaries. This coarse-grained parallelism is especially useful for large systems with many sites.
+
+* **Mixed-precision (MP):** Indicates support for the recently developed mixed-precision optimization technique introduced by Tian et al., where the initial sweeps are accelerated by using reduced floating-point precision. Later sweeps restore full precision by switching to full floating-point precision.
+
+## References
+
+[28] Zhai, H., & Chan, G. K.-L. (2021). Low communication high performance ab initio density matrix renormalization group algorithms. *The Journal of Chemical Physics*, *154*(22), 224107. [doi:10.1063/5.0050902](https://doi.org/10.1063/5.0050902)
+
+[31] Tian, Y., Xie, Z., Luo, Z., & Ma, H. (2022). Mixed-Precision Implementation of the Density Matrix Renormalization Group. *Journal of Chemical Theory and Computation*, *18*(12), 7260–7271. [doi:10.1021/acs.jctc.2c00632](https://doi.org/10.1021/acs.jctc.2c00632)
+
