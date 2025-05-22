@@ -49,7 +49,7 @@ Table Key:
 
 * **ID:** A unique identifier for cross-referencing purposes.
 
-* **Name:** The official name of the package; if there is one, otherwise "...". (Except for 13... and 7...)
+* **Name:** The official name of the package, except for unnamed packages 7 ad 13.
 
 * **Language:** The programming languages used for implementation and interfaces. Languages marked with <sup>i</sup>-superscripts are those mainly used as interfaces.
 
