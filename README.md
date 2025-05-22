@@ -1,7 +1,12 @@
 The Software Landscape for the Density Matrix
 Renormalization Group
 ===
-Per Sehlstedt, Jan Brandejs, Lars Karlsson and Paolo Bientinesi
+Per Sehlstedt, Jan Brandejs, Lars Karlsson and Paolo Bientinesi\
+pers at cs.umu.se 
+
+This list covers the rapidly expanding DMRG software landscape, comprehensively comparing features of many existing packages. We aim to raise awareness of existing packages and guide researchers in finding a suitable package for their needs while helping developers identify opportunities for collaboration, modularity standardization, and optimization. Despite DMRG’s broad applicability across fields like materials science, quantum chemistry, and quantum computing, many independent implementations have been developed, leading to duplicated efforts and limited interoperability. We highlight key aspects, including parallelism strategies for high-performance computing and symmetry-adapted formulations that enhance efficiency. 
+
+We invite the community to contribute, especially when a key software is missing.
 
 ## High-Level Overview
 
@@ -49,7 +54,7 @@ Table Key:
 
 * **ID:** A unique identifier for cross-referencing purposes.
 
-* **Name:** The official name of the package, except for unnamed packages 7 ad 13.
+* **Name:** The official name of the package, except for unnamed packages 7 and 13.
 
 * **Language:** The programming languages used for implementation and interfaces. Languages marked with <sup>i</sup>-superscripts are those mainly used as interfaces.
 
