@@ -10,7 +10,7 @@ We invite the community to contribute, especially when a key software is missing
 
 ## High-Level Overview
 
-High-level aspects of each package. This includes the implementation language and scheme, support for symmetries, and HPC capabilities.
+High-level aspects of each package. This includes the implementation language and scheme, support for symmetries, and HPC capabilities. Note that support for multiple features does not imply that they can be utilized simultaneously.
 
 | ID | Name | Language | OSS | Gen. | Sym. A | Sym. NA | HPC SM | HPC DM | HPC GPU |
 |---|---|---|---|---|---|---|---|---|---|
@@ -69,11 +69,9 @@ Table Key:
 * **Symmetry Support (Sym.):** Indicates whether the package is symmetry-adapted to support abelian (A) and/or non-abelian (NA) symmetries or not.
 
 * **High-Performance Computing (HPC):** Indicates support for HPC platforms, categorized as shared-memory parallelism (SM), distributed-memory parallelism (DM), and single- (S) or multi- (M) GPU acceleration (GPU).
-  
-Note: Support for multiple features does not imply that they can be utilized simultaneously.
 
 
-## Parallelization strategies
+## Parallelization strategy
 
 Support for parallelism strategies and mixed-precision optimization techniques.
 
@@ -118,7 +116,7 @@ Support for parallelism strategies and mixed-precision optimization techniques.
 
 Table key:
 
-We now expand on the HPC aspects introduced in the High-Level Overview to describe parallelization strategies and other optimization techniques. We closely follow the classification summary and five-level hierarchy of parallelism first introduced by Zhai and Chan [28] and then further discussed by Tian and Ma [31]. The following describes the HPC strategies:
+We closely follow the classification summary and five-level hierarchy of parallelism first introduced by Zhai and Chan [28] and then further discussed by Tian and Ma [31]. The following describes the HPC strategies:
 
 * **Parallel strategies (Parallelism):** Indicates support for the following types of parallelism:
     * **Parallelism within matrix operations (i):** The most fine-grained and lowest-level source of parallelism is the data parallelism found primarily within the matrix–matrix and matrix–vector multiplications that underpin the tensor algebra in the DMRG algorithm.
@@ -128,6 +126,64 @@ We now expand on the HPC aspects introduced in the High-Level Overview to descri
     * **Parallelism over sites (v):** The DMRG sequentially sweeps back and forth along a path. The path can be partitioned into sections that can be processed simultaneously at the expense of extra communication at the section boundaries. This coarse-grained parallelism is especially useful for large systems with many sites.
 
 * **Mixed-precision (MP):** Indicates support for the recently developed mixed-precision optimization technique introduced by Tian et al., where the initial sweeps are accelerated by using reduced floating-point precision. Later sweeps restore full precision by switching to full floating-point precision.
+
+## Symmetry support
+
+Support for various types of symmetries. Note that support for multiple features does not imply that they can be utilized simultaneously.
+
+
+| ID | Name | U(1) | Z | SU | P | Z2f | Other |
+|---|---|---|---|---|---|---|---|
+| 1 | ALPS DMRG | ✓ | - | - | - | ✓ | - |
+| 2 | ALPS MPS | ✓ | 2 | - | - | ✓ | - |
+| 3 | BAGEL | ✓ | - | - | - | ✓ | - |
+| 4 | Block2 | ✓ | n | 2 | ✓ | ✓ | - |
+| 5 | CheMPS2 | ✓ | - | 2 | ✓ | ✓ | - |
+| 6 | ChemTensor | ✓ | - | 2 | - | - | - |
+| 7 | Chen et al. | ✓ | - | - | - | ✓ | - |
+| 8 | Cytnx | ✓ | n | - | - | ✓ | - |
+| 9 | DMRG-Budapest | ✓ | n | n | ✓ | ✓ | - |
+| 10 | DMRG++ | ✓ | - | - | - | ✓ | - |
+| 11 | DMRGPy | - | - | - | - | ✓ | - |
+| 12 | FOCUS | ✓ | - | 2 | - | ✓ | - |
+| 13 | Hong et al. | - | - | - | - | - | - |
+| 14 | ITensor | ✓ | n | - | - | ✓ | - |
+| 15 | ITensorMPS.jl | ✓ | n | - | - | ✓ | - |
+| 16 | Kylin | ✓ | - | 2 | ✓ | ✓ | - |
+| 17 | MOLMPS | ✓ | - | - | ✓ | ✓ | - |
+| 18 | MPSKit.jl | ✓ | n | n | - | ✓ | Anyonic/Categoric |
+| 19 | MPToolkit | ✓ | n | 2 | - | ✓ | - |
+| 20 | OSMPS | ✓ | 2 | - | - | ✓ | - |
+| 21 | PyTeNet | ✓ | - | - | - | - | - |
+| 22 | QCMaquis | ✓ | 2 | 2 | ✓ | ✓ | - |
+| 23 | QSpace | ✓ | n | n | - | ✓ | SO(n), Sp(2n) |
+| 24 | Quantum TEA | ✓ | n | - | - | ✓ | - |
+| 25 | quimb | - | - | - | - | ✓ | - |
+| 26 | Renormalizer | ✓ | - | - | - | ✓ | - |
+| 27 | SeeMPS2 | - | - | - | - | - | - |
+| 28 | SUNDMRG.jl | - | - | n | - | - | - |
+| 29 | SymMPS | ✓ | - | - | - | ✓ | - |
+| 30 | SyTen | ✓ | n | 2 | - | ✓ | - |
+| 31 | TeNPy | ✓ | n | - | - | ✓ | - |
+| 32 | tensor-tools | ✓ | - | - | - | ✓ | - |
+| 33 | TensorTrack | ✓ | n | n | - | ✓ | - |
+| 34 | UltraDMRG | ✓ | n | - | - | ✓ | - |
+| 35 | xDMRG++ | - | - | - | - | ✓ | - |
+
+Table key:
+
+* *The unitary group $\mathrm{U}(1)$: * Indicates support for the unitary group of degree one, which is the most commonly used symmetry. It typically enforces the conservation of particle numbers (total electrons or separate spin counts) and total spin magnetization.
+
+* *Cyclic groups ($\mathbb{Z}$): * Indicates support for either $\mathbb{Z}_2$ or more general $\mathbb{Z}_n$ symmetries. A common usage for $\mathbb{Z}_2$ is to enforce the spin-flip (parity) symmetry in the transverse-field Ising model, where flipping all spins leaves the Hamiltonian unchanged. The more general $\mathbb{Z}_n$ group is common in models with an $n$-fold rotational or cyclic invariance.
+
+* *Special unitary groups ($\mathrm{SU}$): * Indicates support for either $\mathrm{SU}(2)$ or more generally $\mathrm{SU}(n)$. The $\mathrm{SU}(2)$ group is most common and is often applied to preserve the total spin, often referred to as spin $\mathrm{SU}(2)$. An example of $\mathrm{SU}(n)$ is the channel $\mathrm{SU}(3)$ symmetry considered by Weichselbaum.
+
+* *Point groups ($\mathrm{P}$): * Indicates support for abelian point group symmetries $\mathrm{P} \in \{C_1, C_i, C_2, C_s, C_{2h}, D_2, C_{2v}, D_{2h}\}$ with real-valued character tables. They are often used for molecular systems to enforce spatial symmetries.
+
+* *Fermion parity ($\mathbb{Z}_2^\mathrm{f}$): * Indicates support for the fermion parity, which captures the anti-commuting nature of fermionic degrees of freedom. The parity is a $\mathbb{Z}_2$ quantum number that yields an additional sign when exchanging two fermions (each carrying odd parity).
+
+* *Other:* Indicates support for less common symmetries, such as the special orthogonal group $\mathrm{SO}(n)$, the symplectic group $\mathrm{Sp}(2n)$, and Anyonic symmetries. Anyons are particles with non-trivial exchange statistics that are neither fermions nor bosons.
+* 
 
 ## References
 
