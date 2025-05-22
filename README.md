@@ -55,7 +55,11 @@ Table Key:
 
 * **Open Source Software (OSS):** Indicates whether the package is open-source and available for download.
 
-* **Implementation Formalism (Gen.):** Specifies which view the DMRG implementation is based on: 1<sup>st</sup> for the traditional RG perspective using renormalized operators and 2<sup>nd</sup> for the tensor network perspective using MPO/MPS. Additionally, <sup>‡</sup>-superscripts mark those who support both views, and <sup>†</sup>-superscripts mark those who support the usage of TTNO/TTNS.
+* **Implementation Formalism (Gen.):** Specifies which view the DMRG implementation is based on: \
+  1<sup>st</sup> for the traditional RG perspective using renormalized operators and \
+  2<sup>nd</sup> for the tensor network perspective using MPO/MPS. \
+  <sup>‡</sup>-superscripts mark those who support both views, and \
+  <sup>†</sup>-superscripts mark those who support the usage of TTNO/TTNS.
 
 * **Symmetry Support (Sym.):** Indicates whether the package is symmetry-adapted to support abelian (A) and/or non-abelian (NA) symmetries or not.
 
