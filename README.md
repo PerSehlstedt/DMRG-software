@@ -4,8 +4,8 @@ Renormalization Group
 Per Sehlstedt, Jan Brandejs, Lars Karlsson and Paolo Bientinesi\
 pers at cs.umu.se 
 
-Table of Contents
-1. [High-level Overview](#high-level-overview)
+Table of contents
+1. [High-level overview](#high-level-overview)
 2. [Parallelization strategy](#parallelization-strategy)
 3. [Symmetry support](#symmetry-support)
 4. [Hamiltonians](#hamiltonians)
@@ -16,7 +16,8 @@ This list covers the rapidly expanding DMRG software landscape, comprehensively 
 
 We invite the community to contribute, especially in case of missing open-source software.
 
-## High-Level Overview
+
+## High-level overview
 
 High-level aspects of each package. This includes the implementation language and scheme, support for symmetries, and HPC capabilities. Note that support for multiple features does not imply that they can be utilized simultaneously.
 
@@ -58,7 +59,7 @@ High-level aspects of each package. This includes the implementation language an
 | 34 | UltraDMRG | C++ | [34](https://github.com/ultradmrg/ultradmrg) | 2ⁿᵈ | ✓ | - | ✓ | ✓ | S |
 | 35 | xDMRG++ | C++ | [35](https://github.com/xdmrgpp/xdmrgpp) | 2ⁿᵈ | - | - | ✓ | - | - |
 
-Table Key:
+Table key:
 
 * **ID:** A unique identifier for cross-referencing purposes.
 
@@ -124,7 +125,7 @@ Support for parallelism strategies and mixed-precision optimization techniques.
 
 Table key:
 
-We closely follow the classification summary and five-level hierarchy of parallelism first introduced by Zhai and Chan [28] and then further discussed by Tian and Ma [31]. The following describes the HPC strategies:
+We closely follow the classification summary and five-level hierarchy of parallelism first introduced by Zhai and Chan [R28] and then further discussed by Tian and Ma [R31]. The following describes the HPC strategies:
 
 * **Parallel strategies (Parallelism):** Indicates support for the following types of parallelism:
     * **Parallelism within matrix operations (i):** The most fine-grained and lowest-level source of parallelism is the data parallelism found primarily within the matrix–matrix and matrix–vector multiplications that underpin the tensor algebra in the DMRG algorithm.
@@ -180,11 +181,11 @@ Support for various types of symmetries. Note that support for multiple features
 
 Table key:
 
-* *The unitary group * $\mathrm{U}(1)$: Indicates support for the unitary group of degree one, which is the most commonly used symmetry. It typically enforces the conservation of particle numbers (total electrons or separate spin counts) and total spin magnetization.
-* *Cyclic groups * ($\mathbb{Z}$): Indicates support for either $\mathbb{Z}_2$ or more general $\mathbb{Z}_n$ symmetries. A common usage for $\mathbb{Z}_2$ is to enforce the spin-flip (parity) symmetry in the transverse-field Ising model, where flipping all spins leaves the Hamiltonian unchanged. The more general $\mathbb{Z}_n$ group is common in models with an $n$-fold rotational or cyclic invariance.
-* *Special unitary groups * ($\mathrm{SU}$): Indicates support for either $\mathrm{SU}(2)$ or more generally $\mathrm{SU}(n)$. The $\mathrm{SU}(2)$ group is most common and is often applied to preserve the total spin, often referred to as spin $\mathrm{SU}(2)$. An example of $\mathrm{SU}(n)$ is the channel $\mathrm{SU}(3)$ symmetry considered by Weichselbaum.
-* *Point groups * ($\mathrm{P}$): Indicates support for abelian point group symmetries $\mathrm{P} \in \{C_1, C_i, C_2, C_s, C_{2h}, D_2, C_{2v}, D_{2h}\}$ with real-valued character tables. They are often used for molecular systems to enforce spatial symmetries.
-* *Fermion parity * ($\mathbb{Z}_2^\mathrm{f}$): Indicates support for the fermion parity, which captures the anti-commuting nature of fermionic degrees of freedom. The parity is a $\mathbb{Z}_2$ quantum number that yields an additional sign when exchanging two fermions (each carrying odd parity).
+* **The unitary group** $\mathrm{U}(1)$: Indicates support for the unitary group of degree one, which is the most commonly used symmetry. It typically enforces the conservation of particle numbers (total electrons or separate spin counts) and total spin magnetization.
+* **Cyclic groups** ($\mathbb{Z}$): Indicates support for either $\mathbb{Z}_2$ or more general $\mathbb{Z}_n$ symmetries. A common usage for $\mathbb{Z}_2$ is to enforce the spin-flip (parity) symmetry in the transverse-field Ising model, where flipping all spins leaves the Hamiltonian unchanged. The more general $\mathbb{Z}_n$ group is common in models with an $n$-fold rotational or cyclic invariance.
+* **Special unitary groups** ($\mathrm{SU}$): Indicates support for either $\mathrm{SU}(2)$ or more generally $\mathrm{SU}(n)$. The $\mathrm{SU}(2)$ group is most common and is often applied to preserve the total spin, often referred to as spin $\mathrm{SU}(2)$. An example of $\mathrm{SU}(n)$ is the channel $\mathrm{SU}(3)$ symmetry considered by Weichselbaum.
+* **Point groups** ($\mathrm{P}$): Indicates support for abelian point group symmetries $\mathrm{P} \in \{C_1, C_i, C_2, C_s, C_{2h}, D_2, C_{2v}, D_{2h}\}$ with real-valued character tables. They are often used for molecular systems to enforce spatial symmetries.
+* **Fermion parity** ($\mathbb{Z}_2^\mathrm{f}$): Indicates support for the fermion parity, which captures the anti-commuting nature of fermionic degrees of freedom. The parity is a $\mathbb{Z}_2$ quantum number that yields an additional sign when exchanging two fermions (each carrying odd parity).
 
 * *Other:* Indicates support for less common symmetries, such as the special orthogonal group $\mathrm{SO}(n)$, the symplectic group $\mathrm{Sp}(2n)$, and Anyonic symmetries. Anyons are particles with non-trivial exchange statistics that are neither fermions nor bosons.
 
@@ -287,7 +288,7 @@ Table key:
 
 ## References
 
-[28] Zhai, H., & Chan, G. K.-L. (2021). Low communication high performance ab initio density matrix renormalization group algorithms. *The Journal of Chemical Physics*, *154*(22), 224107. [doi:10.1063/5.0050902](https://doi.org/10.1063/5.0050902)
+[R28] Zhai, H., & Chan, G. K.-L. (2021). Low communication high performance ab initio density matrix renormalization group algorithms. *The Journal of Chemical Physics*, *154*(22), 224107. [doi:10.1063/5.0050902](https://doi.org/10.1063/5.0050902)
 
-[31] Tian, Y., Xie, Z., Luo, Z., & Ma, H. (2022). Mixed-Precision Implementation of the Density Matrix Renormalization Group. *Journal of Chemical Theory and Computation*, *18*(12), 7260–7271. [doi:10.1021/acs.jctc.2c00632](https://doi.org/10.1021/acs.jctc.2c00632)
+[R31] Tian, Y., Xie, Z., Luo, Z., & Ma, H. (2022). Mixed-Precision Implementation of the Density Matrix Renormalization Group. *Journal of Chemical Theory and Computation*, *18*(12), 7260–7271. [doi:10.1021/acs.jctc.2c00632](https://doi.org/10.1021/acs.jctc.2c00632)
 
