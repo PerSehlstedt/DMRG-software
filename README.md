@@ -4,6 +4,7 @@ Renormalization Group
 Per Sehlstedt, Jan Brandejs, Lars Karlsson and Paolo Bientinesi\
 pers at cs.umu.se 
 
+
 Table of contents
 1. [High-level overview](#high-level-overview)
 2. [Parallelization strategy](#parallelization-strategy)
@@ -15,6 +16,8 @@ Table of contents
 This list covers the rapidly expanding DMRG software landscape, comprehensively comparing features of many existing packages. We aim to raise awareness of existing packages and guide researchers in finding a suitable package for their needs while helping developers identify opportunities for collaboration, modularity standardization, and optimization. Despite DMRG’s broad applicability across fields like materials science, quantum chemistry, and quantum computing, many independent implementations have been developed, leading to duplicated efforts and limited interoperability. We highlight key aspects, including parallelism strategies for high-performance computing and symmetry-adapted formulations that enhance efficiency. 
 
 We invite the community to contribute in case of missing open-source software.
+
+Please consider citing https://arxiv.org/abs/2506.12629
 
 
 ## High-level overview
