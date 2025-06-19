@@ -17,7 +17,7 @@ This list covers the rapidly expanding DMRG software landscape, comprehensively 
 
 We invite the community to contribute in case of missing open-source software.
 
-Please consider citing https://arxiv.org/abs/2506.12629
+Please consider citing [arXiv:2506.12629](https://arxiv.org/abs/2506.12629).
 
 
 ## High-level overview
