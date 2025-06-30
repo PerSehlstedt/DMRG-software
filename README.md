@@ -23,8 +23,9 @@ Please consider citing the original paper [arXiv:2506.12629](https://arxiv.org/a
 
 High-level aspects of each package. This includes the implementation language and scheme, support for symmetries, and HPC capabilities. Note that support for multiple features does not imply that they can be utilized simultaneously.
 
-| Name | Language | OSS | Gen. | Sym. A | Sym. NA | HPC SM | HPC DM | HPC GPU |
-|---|---|---|---|---|---|---|---|---|
+| Name | Language | OSS | Gen. | Sym. | | HPC | | |
+|---|---|:---:|---|:---:|:---:|:---:|:---:|:---:|
+| | | | | A | NA | SM | DM | GPU |
 | [ALPS DMRG](https://github.com/ALPSim/ALPS) | C++, Python<sup>i</sup> | ✓ | 1<sup>st</sup> | ✓ | - | ✓ | - | - |
 | [ALPS MPS](https://github.com/ALPSim/ALPS) | C++, Python<sup>i</sup> | ✓ | 2<sup>nd</sup> | ✓ | - | ✓ | - | - |
 | [BAGEL](https://github.com/qsimulate-open/bagel) | C++ | ✓ | 1<sup>st</sup> | ✓ | - | ✓ | ✓ | - |
@@ -141,8 +142,8 @@ We closely follow the classification summary and five-level hierarchy of paralle
 
 Support for various types of symmetries. Note that support for multiple features does not imply that they can be utilized simultaneously.
 
-| Name | U(1) | Z | SU | P | Z2f | Other |
-|---|---|---|---|---|---|---|
+| Name | U(1) | Z | SU | P | Z<sub>2</sub><sup>f</sup> | Other |
+|---|:---:|:---:|:---:|:---:|:---:|---|
 | ALPS DMRG | ✓ | - | - | - | ✓ | - |
 | ALPS MPS | ✓ | 2 | - | - | ✓ | - |
 | BAGEL | ✓ | - | - | - | ✓ | - |
@@ -187,14 +188,15 @@ Table key:
 * **Point groups** ($\mathrm{P}$): Indicates support for abelian point group symmetries $\mathrm{P} \in \{C_1, C_i, C_2, C_s, C_{2h}, D_2, C_{2v}, D_{2h}\}$ with real-valued character tables. They are often used for molecular systems to enforce spatial symmetries.
 * **Fermion parity** ($\mathbb{Z}_2^\mathrm{f}$): Indicates support for the fermion parity, which captures the anti-commuting nature of fermionic degrees of freedom. The parity is a $\mathbb{Z}_2$ quantum number that yields an additional sign when exchanging two fermions (each carrying odd parity).
 
-* *Other:* Indicates support for less common symmetries, such as the special orthogonal group $\mathrm{SO}(n)$, the symplectic group $\mathrm{Sp}(2n)$, and Anyonic symmetries. Anyons are particles with non-trivial exchange statistics that are neither fermions nor bosons.
+* **Other**: Indicates support for less common symmetries, such as the special orthogonal group $\mathrm{SO}(n)$, the symplectic group $\mathrm{Sp}(2n)$, and Anyonic symmetries. Anyons are particles with non-trivial exchange statistics that are neither fermions nor bosons.
 
 ## Hamiltonians
 
 Support for custom Hamiltonian constructions and the variety of fields for built-in models.
 
-| Name | Construction Custom | Construction Operator | Built-in |
-|---|---|---|---|
+| Name | Construction | | Built-in |
+|---|:---:|:---:|---|
+| |  Custom | Operator | |
 | ALPS DMRG | ✓ | ✓ | Specific |
 | ALPS MPS | - | - | Specific |
 | BAGEL | - | - | Specific |
@@ -234,8 +236,10 @@ Support for custom Hamiltonian constructions and the variety of fields for built
 
 Table key:
 
-* Firstly, we only indicate the presence of some interface for custom Hamiltonian construction and do not distinguish based on their implementation. Moreover, standard operators include spin, spin exchange, bosonic, and fermionic operators for the operator-type construction interfaces. But again, we do not make distinctions based on how many or which operators each package offers.
-* Secondly, we acknowledge that classifying the variety of built-in Hamiltonians is somewhat subjective. Currently, the column reflects the developers' views on their package. We provided them with the following examples of what we considered fields: quantum chemistry, condensed matter physics, and nuclear structure.
+* **Construction:** Indicates if and how a user can define custom Hamiltonians.
+    * **Custom:** Indicates support for some generic custom Hamiltonian construction interface.
+    * **Operator:** Indicates support for constructing custom Hamiltonians using local $n$-body operators defined on the different site-indices upon which the operators act.
+* **Built-in:** Indicates whether the package contains built-in Hamiltonians that target a specific or broad range of fields.
 
 
 ## Eigensolvers
