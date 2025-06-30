@@ -26,41 +26,41 @@ High-level aspects of each package. This includes the implementation language an
 
 | Name | Language | OSS | Gen. | Sym. A | Sym. NA | HPC SM | HPC DM | HPC GPU |
 |---|---|---|---|---|---|---|---|---|
-| [ALPS DMRG](https://github.com/ALPSim/ALPS) | C++, Pythonⁱ | ✓ | 1ˢᵗ | ✓ | - | ✓ | - | - |
-| [ALPS MPS](https://github.com/ALPSim/ALPS) | C++, Pythonⁱ | ✓ | 2ⁿᵈ | ✓ | - | ✓ | - | - |
-| [BAGEL](https://github.com/qsimulate-open/bagel) | C++ | ✓ | 1ˢᵗ | ✓ | - | ✓ | ✓ | - |
-| [Block2](https://github.com/block-hczhai/block2-preview) | C++, Pythonⁱ | ✓ | 2ⁿᵈ‡ | ✓ | ✓ | ✓ | ✓ | - |
-| [CheMPS2](https://github.com/SebWouters/CheMPS2) | C++, Pythonⁱ | ✓ | 1ˢᵗ | ✓ | ✓ | ✓ | ✓ | - |
-| [ChemTensor](https://github.com/qc-tum/chemtensor) | C, Pythonⁱ | ✓ | 2ⁿᵈ† | ✓ | ✓ | ✓ | - | - |
-| Chen et al. | C++ | - | 1ˢᵗ | ✓ | - | ✓ | - | S |
-| [Cytnx](https://github.com/Cytnx-dev/Cytnx) | C++, Pythonⁱ | ✓ | 2ⁿᵈ† | ✓ | - | ✓ | - | S |
-| DMRG-Budapest | C++, MATLABⁱ | - | 2ⁿᵈ‡ | ✓ | ✓ | ✓ | ✓ | M |
-| [DMRG++](https://github.com/g1257/dmrgpp) | C++ | ✓ | 1ˢᵗ | ✓ | - | ✓ | - | S |
-| [DMRGPy](https://github.com/joselado/dmrgpy) | Python | ✓ | 2ⁿᵈ | - | - | ✓ | - | - |
-| FOCUS | C++ | - | 1ˢᵗ | ✓ | ✓ | ✓ | ✓ | M |
-| Hong et al. | C++ | - | 2ⁿᵈ | - | - | - | - | S |
-| [ITensor](https://github.com/ITensor/ITensor) | C++ | ✓ | 2ⁿᵈ | ✓ | - | ✓ | - | - |
-| [ITensorMPS.jl](https://github.com/ITensor/ITensorMPS.jl) | Julia | ✓ | 2ⁿᵈ | ✓ | - | ✓ | - | S |
-| Kylin | C++ | - | 2ⁿᵈ | ✓ | ✓ | ✓ | - | - |
-| MOLMPS | C++ | - | 1ˢᵗ | ✓ | - | ✓ | ✓ | S |
-| [MPSKit.jl](https://github.com/QuantumKitHub/MPSKit.jl) | Julia | ✓ | 2ⁿᵈ | ✓ | ✓ | ✓ | - | - |
-| [MPToolkit](https://github.com/mptoolkit/mptoolkit) | C++ | ✓ | 2ⁿᵈ | ✓ | ✓ | ✓ | - | - |
-| [OSMPS](https://sourceforge.net/projects/openmps/) | Fortran, Pythonⁱ | ✓ | 2ⁿᵈ | ✓ | - | ✓ | ✓ | - |
-| [PyTeNet](https://github.com/cmendl/pytenet) | Python | ✓ | 2ⁿᵈ | ✓ | - | ✓ | - | - |
-| [QCMaquis](https://github.com/qcscine/qcmaquis) | C++ | ✓ | 2ⁿᵈ | ✓ | ✓ | ✓ | - | - |
-| [QSpace](https://bitbucket.org/qspace4u/workspace/repositories/) | C++, MATLABⁱ | ✓ | 2ⁿᵈ‡ | ✓ | ✓ | ✓ | - | - |
-| [Quantum TEA](https://baltig.infn.it/quantum_tea/quantum_tea) | Fortran, Pythonⁱ | ✓ | 2ⁿᵈ† | ✓ | - | ✓ | - | S |
-| [quimb](https://github.com/jcmgray/quimb) | Python | ✓ | 2ⁿᵈ | - | - | ✓ | - | - |
-| [Renormalizer](https://github.com/shuaigroup/Renormalizer) | Python | ✓ | 2ⁿᵈ† | ✓ | - | ✓ | - | S |
-| [SeeMPS2](https://github.com/juanjosegarciaripoll/seemps2) | Python | ✓ | 2ⁿᵈ | - | - | ✓ | - | - |
-| [SUNDMRG.jl](https://github.com/MGYamada/SUNDMRG.jl) | Julia | ✓ | 1ˢᵗ | - | ✓ | ✓ | ✓ | S |
-| [SymMPS](https://www.symmps.eu/) | C++ | ✓ | 2ⁿᵈ | ✓ | - | ✓ | - | - |
-| SyTen | C++, Pythonⁱ | - | 2ⁿᵈ | ✓ | ✓ | ✓ | ✓ | S |
-| [TeNPy](https://github.com/tenpy/tenpy) | Python | ✓ | 2ⁿᵈ | ✓ | - | ✓ | ✓ | - |
-| [tensor-tools](https://github.com/ClarkResearchGroup/tensor-tools) | C++ | ✓ | 2ⁿᵈ | ✓ | - | ✓ | ✓ | - |
-| [TensorTrack](https://github.com/quantumghent/TensorTrack) | MATLAB | ✓ | 2ⁿᵈ | ✓ | ✓ | ✓ | - | - |
-| [UltraDMRG](https://github.com/QuantumLiquids/UltraDMRG) | C++ | ✓ | 2ⁿᵈ | ✓ | - | ✓ | ✓ | S |
-| [xDMRG++](https://github.com/DavidAce/xDMRGpp) | C++ | ✓ | 2ⁿᵈ | - | - | ✓ | - | - |
+| [ALPS DMRG](https://github.com/ALPSim/ALPS) | C++, Python<sup>i</sup> | ✓ | 1<sup>st</sup> | ✓ | - | ✓ | - | - |
+| [ALPS MPS](https://github.com/ALPSim/ALPS) | C++, Python<sup>i</sup> | ✓ | 2<sup>nd</sup> | ✓ | - | ✓ | - | - |
+| [BAGEL](https://github.com/qsimulate-open/bagel) | C++ | ✓ | 1<sup>st</sup> | ✓ | - | ✓ | ✓ | - |
+| [Block2](https://github.com/block-hczhai/block2-preview) | C++, Python<sup>i</sup> | ✓ | 2<sup>nd</sup>‡ | ✓ | ✓ | ✓ | ✓ | - |
+| [CheMPS2](https://github.com/SebWouters/CheMPS2) | C++, Python<sup>i</sup> | ✓ | 1<sup>st</sup> | ✓ | ✓ | ✓ | ✓ | - |
+| [ChemTensor](https://github.com/qc-tum/chemtensor) | C, Python<sup>i</sup> | ✓ | 2<sup>nd</sup>† | ✓ | ✓ | ✓ | - | - |
+| Chen et al. | C++ | - | 1<sup>st</sup> | ✓ | - | ✓ | - | S |
+| [Cytnx](https://github.com/Cytnx-dev/Cytnx) | C++, Python<sup>i</sup> | ✓ | 2<sup>nd</sup>† | ✓ | - | ✓ | - | S |
+| DMRG-Budapest | C++, MATLAB<sup>i</sup> | - | 2<sup>nd</sup>‡ | ✓ | ✓ | ✓ | ✓ | M |
+| [DMRG++](https://github.com/g1257/dmrgpp) | C++ | ✓ | 1<sup>st</sup> | ✓ | - | ✓ | - | S |
+| [DMRGPy](https://github.com/joselado/dmrgpy) | Python | ✓ | 2<sup>nd</sup> | - | - | ✓ | - | - |
+| FOCUS | C++ | - | 1<sup>st</sup> | ✓ | ✓ | ✓ | ✓ | M |
+| Hong et al. | C++ | - | 2<sup>nd</sup> | - | - | - | - | S |
+| [ITensor](https://github.com/ITensor/ITensor) | C++ | ✓ | 2<sup>nd</sup> | ✓ | - | ✓ | - | - |
+| [ITensorMPS.jl](https://github.com/ITensor/ITensorMPS.jl) | Julia | ✓ | 2<sup>nd</sup> | ✓ | - | ✓ | - | S |
+| Kylin | C++ | - | 2<sup>nd</sup> | ✓ | ✓ | ✓ | - | - |
+| MOLMPS | C++ | - | 1<sup>st</sup> | ✓ | - | ✓ | ✓ | S |
+| [MPSKit.jl](https://github.com/QuantumKitHub/MPSKit.jl) | Julia | ✓ | 2<sup>nd</sup> | ✓ | ✓ | ✓ | - | - |
+| [MPToolkit](https://github.com/mptoolkit/mptoolkit) | C++ | ✓ | 2<sup>nd</sup> | ✓ | ✓ | ✓ | - | - |
+| [OSMPS](https://sourceforge.net/projects/openmps/) | Fortran, Python<sup>i</sup> | ✓ | 2<sup>nd</sup> | ✓ | - | ✓ | ✓ | - |
+| [PyTeNet](https://github.com/cmendl/pytenet) | Python | ✓ | 2<sup>nd</sup> | ✓ | - | ✓ | - | - |
+| [QCMaquis](https://github.com/qcscine/qcmaquis) | C++ | ✓ | 2<sup>nd</sup> | ✓ | ✓ | ✓ | - | - |
+| [QSpace](https://bitbucket.org/qspace4u/workspace/repositories/) | C++, MATLAB<sup>i</sup> | ✓ | 2<sup>nd</sup>‡ | ✓ | ✓ | ✓ | - | - |
+| [Quantum TEA](https://baltig.infn.it/quantum_tea/quantum_tea) | Fortran, Python<sup>i</sup> | ✓ | 2<sup>nd</sup>† | ✓ | - | ✓ | - | S |
+| [quimb](https://github.com/jcmgray/quimb) | Python | ✓ | 2<sup>nd</sup> | - | - | ✓ | - | - |
+| [Renormalizer](https://github.com/shuaigroup/Renormalizer) | Python | ✓ | 2<sup>nd</sup>† | ✓ | - | ✓ | - | S |
+| [SeeMPS2](https://github.com/juanjosegarciaripoll/seemps2) | Python | ✓ | 2<sup>nd</sup> | - | - | ✓ | - | - |
+| [SUNDMRG.jl](https://github.com/MGYamada/SUNDMRG.jl) | Julia | ✓ | 1<sup>st</sup> | - | ✓ | ✓ | ✓ | S |
+| [SymMPS](https://www.symmps.eu/) | C++ | ✓ | 2<sup>nd</sup> | ✓ | - | ✓ | - | - |
+| SyTen | C++, Python<sup>i</sup> | - | 2<sup>nd</sup> | ✓ | ✓ | ✓ | ✓ | S |
+| [TeNPy](https://github.com/tenpy/tenpy) | Python | ✓ | 2<sup>nd</sup> | ✓ | - | ✓ | ✓ | - |
+| [tensor-tools](https://github.com/ClarkResearchGroup/tensor-tools) | C++ | ✓ | 2<sup>nd</sup> | ✓ | - | ✓ | ✓ | - |
+| [TensorTrack](https://github.com/quantumghent/TensorTrack) | MATLAB | ✓ | 2<sup>nd</sup> | ✓ | ✓ | ✓ | - | - |
+| [UltraDMRG](https://github.com/QuantumLiquids/UltraDMRG) | C++ | ✓ | 2<sup>nd</sup> | ✓ | - | ✓ | ✓ | S |
+| [xDMRG++](https://github.com/DavidAce/xDMRGpp) | C++ | ✓ | 2<sup>nd</sup> | - | - | ✓ | - | - |
 
 Table key:
 
@@ -74,8 +74,8 @@ Table key:
 * **Implementation Formalism (Gen.):** Specifies which view the DMRG implementation is based on: \
   1<sup>st</sup> for the traditional RG perspective using renormalized operators and \
   2<sup>nd</sup> for the tensor network perspective using MPO/MPS. \
-  <sup>‡</sup>-superscripts mark those who support both views, and \
-  <sup>†</sup>-superscripts mark those who support the usage of TTNO/TTNS.
+  ‡-superscripts mark those who support both views, and \
+  †-superscripts mark those who support the usage of TTNO/TTNS.
 
 * **Symmetry Support (Sym.):** Indicates whether the package is symmetry-adapted to support abelian (A) and/or non-abelian (NA) symmetries or not.
 
