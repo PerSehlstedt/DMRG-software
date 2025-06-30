@@ -127,7 +127,7 @@ Support for parallelism strategies and mixed-precision optimization techniques.
 
 Table key:
 
-We closely follow the classification summary and five-level hierarchy of parallelism first introduced by Zhai and Chan [R28] and then further discussed by Tian and Ma [R31]. The following describes the HPC strategies:
+We closely follow the classification summary and five-level hierarchy of parallelism first introduced by Zhai and Chan [[1]](#references) and then further discussed by Tian and Ma [[2]](#references). The following describes the HPC strategies:
 
 * **Parallel strategies (Parallelism):** Indicates support for the following types of parallelism:
     * **Parallelism within matrix operations (i):** The most fine-grained and lowest-level source of parallelism is the data parallelism found primarily within the matrix–matrix and matrix–vector multiplications that underpin the tensor algebra in the DMRG algorithm.
@@ -292,7 +292,7 @@ Table key:
 
 ## References
 
-[R28] Zhai, H., & Chan, G. K.-L. (2021). Low communication high performance ab initio density matrix renormalization group algorithms. *The Journal of Chemical Physics*, *154*(22), 224107. [doi:10.1063/5.0050902](https://doi.org/10.1063/5.0050902)
+[1] Zhai, H., & Chan, G. K.-L. (2021). Low communication high performance ab initio density matrix renormalization group algorithms. *The Journal of Chemical Physics*, *154*(22), 224107. [doi:10.1063/5.0050902](https://doi.org/10.1063/5.0050902)
 
-[R31] Tian, Y., Xie, Z., Luo, Z., & Ma, H. (2022). Mixed-Precision Implementation of the Density Matrix Renormalization Group. *Journal of Chemical Theory and Computation*, *18*(12), 7260–7271. [doi:10.1021/acs.jctc.2c00632](https://doi.org/10.1021/acs.jctc.2c00632)
+[2] Tian, Y., Xie, Z., Luo, Z., & Ma, H. (2022). Mixed-Precision Implementation of the Density Matrix Renormalization Group. *Journal of Chemical Theory and Computation*, *18*(12), 7260–7271. [doi:10.1021/acs.jctc.2c00632](https://doi.org/10.1021/acs.jctc.2c00632)
 
