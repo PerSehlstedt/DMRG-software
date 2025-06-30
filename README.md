@@ -24,47 +24,45 @@ Please consider citing the original paper [arXiv:2506.12629](https://arxiv.org/a
 
 High-level aspects of each package. This includes the implementation language and scheme, support for symmetries, and HPC capabilities. Note that support for multiple features does not imply that they can be utilized simultaneously.
 
-| ID | Name | Language | OSS | Gen. | Sym. A | Sym. NA | HPC SM | HPC DM | HPC GPU |
-|---|---|---|---|---|---|---|---|---|---|
-| 1 | ALPS DMRG | C++, Pythonⁱ | [1](https://github.com/ALPS/alps) | 1ˢᵗ | ✓ | - | ✓ | - | - |
-| 2 | ALPS MPS | C++, Pythonⁱ | [2](https://github.com/ALPS/alps) | 2ⁿᵈ | ✓ | - | ✓ | - | - |
-| 3 | BAGEL | C++ | [3](https://github.com/BAGEL-FDE/bagel-fde) | 1ˢᵗ | ✓ | - | ✓ | ✓ | - |
-| 4 | Block2 | C++, Pythonⁱ | [4](https://github.com/block2/block2) | 2ⁿᵈ‡ | ✓ | ✓ | ✓ | ✓ | - |
-| 5 | CheMPS2 | C++, Pythonⁱ | [5](https://github.com/sebwouters/CheMPS2) | 1ˢᵗ | ✓ | ✓ | ✓ | ✓ | - |
-| 6 | ChemTensor | C, Pythonⁱ | [6](https://github.com/ChemTensor/ChemTensor) | 2ⁿᵈ† | ✓ | ✓ | ✓ | - | - |
-| 7 | Chen et al. | C++ | - | 1ˢᵗ | ✓ | - | ✓ | - | S |
-| 8 | Cytnx | C++, Pythonⁱ | [8](https://github.com/Cytnx/Cytnx) | 2ⁿᵈ† | ✓ | - | ✓ | - | S |
-| 9 | DMRG-Budapest | C++, MATLABⁱ | - | 2ⁿᵈ‡ | ✓ | ✓ | ✓ | ✓ | M |
-| 10 | DMRG++ | C++ | [10](https://github.com/DMRGpp/DMRGpp) | 1ˢᵗ | ✓ | - | ✓ | - | S |
-| 11 | DMRGPy | Python | [11](https://github.com/DMRGPy/DMRGPy) | 2ⁿᵈ | - | - | ✓ | - | - |
-| 12 | FOCUS | C++ | - | 1ˢᵗ | ✓ | ✓ | ✓ | ✓ | M |
-| 13 | Hong et al. | C++ | - | 2ⁿᵈ | - | - | - | - | S |
-| 14 | ITensor | C++ | [14](https://github.com/ITensor/ITensor) | 2ⁿᵈ | ✓ | - | ✓ | - | - |
-| 15 | ITensorMPS.jl | Julia | [15](https://github.com/ITensor/ITensorMPS.jl) | 2ⁿᵈ | ✓ | - | ✓ | - | S |
-| 16 | Kylin | C++ | - | 2ⁿᵈ | ✓ | ✓ | ✓ | - | - |
-| 17 | MOLMPS | C++ | - | 1ˢᵗ | ✓ | - | ✓ | ✓ | S |
-| 18 | MPSKit.jl | Julia | [18](https://github.com/MPSKit/MPSKit.jl) | 2ⁿᵈ | ✓ | ✓ | ✓ | - | - |
-| 19 | MPToolkit | C++ | [19](https://github.com/mpstools/MPToolkit) | 2ⁿᵈ | ✓ | ✓ | ✓ | - | - |
-| 20 | OSMPS | Fortran, Pythonⁱ | [20](https://github.com/orbitalscience/OSMPS) | 2ⁿᵈ | ✓ | - | ✓ | ✓ | - |
-| 21 | PyTeNet | Python | [21](https://github.com/pytenet/pytenet) | 2ⁿᵈ | ✓ | - | ✓ | - | - |
-| 22 | QCMaquis | C++ | [22](https://github.com/qcmaquis/qcmaquis) | 2ⁿᵈ | ✓ | ✓ | ✓ | - | - |
-| 23 | QSpace | C++, MATLABⁱ | [23](https://github.com/QSpace/QSpace) | 2ⁿᵈ‡ | ✓ | ✓ | ✓ | - | - |
-| 24 | Quantum TEA | Fortran, Pythonⁱ | [24](https://github.com/QuantumTEA/QuantumTEA) | 2ⁿᵈ† | ✓ | - | ✓ | - | S |
-| 25 | quimb | Python | [25](https://github.com/quimb-dev/quimb) | 2ⁿᵈ | - | - | ✓ | - | - |
-| 26 | Renormalizer | Python | [26](https://github.com/Renormalizer/Renormalizer) | 2ⁿᵈ† | ✓ | - | ✓ | - | S |
-| 27 | SeeMPS2 | Python | [27](https://github.com/seemps/seemps2) | 2ⁿᵈ | - | - | ✓ | - | - |
-| 28 | SUNDMRG.jl | Julia | [28](https://github.com/SUNDMRG/SUNDMRG.jl) | 1ˢᵗ | - | ✓ | ✓ | ✓ | S |
-| 29 | SymMPS | C++ | [29](https://github.com/SymMPS/SymMPS) | 2ⁿᵈ | ✓ | - | ✓ | - | - |
-| 30 | SyTen | C++, Pythonⁱ | - | 2ⁿᵈ | ✓ | ✓ | ✓ | ✓ | S |
-| 31 | TeNPy | Python | [31](https://github.com/tenpy/tenpy) | 2ⁿᵈ | ✓ | - | ✓ | ✓ | - |
-| 32 | tensor-tools | C++ | [32](https://github.com/tensor-tools/tensor-tools) | 2ⁿᵈ | ✓ | - | ✓ | ✓ | - |
-| 33 | TensorTrack | MATLAB | [33](https://github.com/TensorTrack/TensorTrack) | 2ⁿᵈ | ✓ | ✓ | ✓ | - | - |
-| 34 | UltraDMRG | C++ | [34](https://github.com/ultradmrg/ultradmrg) | 2ⁿᵈ | ✓ | - | ✓ | ✓ | S |
-| 35 | xDMRG++ | C++ | [35](https://github.com/xdmrgpp/xdmrgpp) | 2ⁿᵈ | - | - | ✓ | - | - |
+| Name | Language | OSS | Gen. | Sym. A | Sym. NA | HPC SM | HPC DM | HPC GPU |
+|---|---|---|---|---|---|---|---|---|
+| ALPS DMRG | C++, Pythonⁱ | [1](https://github.com/ALPS/alps) | 1ˢᵗ | ✓ | - | ✓ | - | - |
+| ALPS MPS | C++, Pythonⁱ | [2](https://github.com/ALPS/alps) | 2ⁿᵈ | ✓ | - | ✓ | - | - |
+| BAGEL | C++ | [3](https://github.com/BAGEL-FDE/bagel-fde) | 1ˢᵗ | ✓ | - | ✓ | ✓ | - |
+| Block2 | C++, Pythonⁱ | [4](https://github.com/block2/block2) | 2ⁿᵈ‡ | ✓ | ✓ | ✓ | ✓ | - |
+| CheMPS2 | C++, Pythonⁱ | [5](https://github.com/sebwouters/CheMPS2) | 1ˢᵗ | ✓ | ✓ | ✓ | ✓ | - |
+| ChemTensor | C, Pythonⁱ | [6](https://github.com/ChemTensor/ChemTensor) | 2ⁿᵈ† | ✓ | ✓ | ✓ | - | - |
+| Chen et al. | C++ | - | 1ˢᵗ | ✓ | - | ✓ | - | S |
+| Cytnx | C++, Pythonⁱ | [8](https://github.com/Cytnx/Cytnx) | 2ⁿᵈ† | ✓ | - | ✓ | - | S |
+| DMRG-Budapest | C++, MATLABⁱ | - | 2ⁿᵈ‡ | ✓ | ✓ | ✓ | ✓ | M |
+| DMRG++ | C++ | [10](https://github.com/DMRGpp/DMRGpp) | 1ˢᵗ | ✓ | - | ✓ | - | S |
+| DMRGPy | Python | [11](https://github.com/DMRGPy/DMRGPy) | 2ⁿᵈ | - | - | ✓ | - | - |
+| FOCUS | C++ | - | 1ˢᵗ | ✓ | ✓ | ✓ | ✓ | M |
+| Hong et al. | C++ | - | 2ⁿᵈ | - | - | - | - | S |
+| ITensor | C++ | [14](https://github.com/ITensor/ITensor) | 2ⁿᵈ | ✓ | - | ✓ | - | - |
+| ITensorMPS.jl | Julia | [15](https://github.com/ITensor/ITensorMPS.jl) | 2ⁿᵈ | ✓ | - | ✓ | - | S |
+| Kylin | C++ | - | 2ⁿᵈ | ✓ | ✓ | ✓ | - | - |
+| MOLMPS | C++ | - | 1ˢᵗ | ✓ | - | ✓ | ✓ | S |
+| MPSKit.jl | Julia | [18](https://github.com/MPSKit/MPSKit.jl) | 2ⁿᵈ | ✓ | ✓ | ✓ | - | - |
+| MPToolkit | C++ | [19](https://github.com/mpstools/MPToolkit) | 2ⁿᵈ | ✓ | ✓ | ✓ | - | - |
+| OSMPS | Fortran, Pythonⁱ | [20](https://github.com/orbitalscience/OSMPS) | 2ⁿᵈ | ✓ | - | ✓ | ✓ | - |
+| PyTeNet | Python | [21](https://github.com/pytenet/pytenet) | 2ⁿᵈ | ✓ | - | ✓ | - | - |
+| QCMaquis | C++ | [22](https://github.com/qcmaquis/qcmaquis) | 2ⁿᵈ | ✓ | ✓ | ✓ | - | - |
+| QSpace | C++, MATLABⁱ | [23](https://github.com/QSpace/QSpace) | 2ⁿᵈ‡ | ✓ | ✓ | ✓ | - | - |
+| Quantum TEA | Fortran, Pythonⁱ | [24](https://github.com/QuantumTEA/QuantumTEA) | 2ⁿᵈ† | ✓ | - | ✓ | - | S |
+| quimb | Python | [25](https://github.com/quimb-dev/quimb) | 2ⁿᵈ | - | - | ✓ | - | - |
+| Renormalizer | Python | [26](https://github.com/Renormalizer/Renormalizer) | 2ⁿᵈ† | ✓ | - | ✓ | - | S |
+| SeeMPS2 | Python | [27](https://github.com/seemps/seemps2) | 2ⁿᵈ | - | - | ✓ | - | - |
+| SUNDMRG.jl | Julia | [28](https://github.com/SUNDMRG/SUNDMRG.jl) | 1ˢᵗ | - | ✓ | ✓ | ✓ | S |
+| SymMPS | C++ | [29](https://github.com/SymMPS/SymMPS) | 2ⁿᵈ | ✓ | - | ✓ | - | - |
+| SyTen | C++, Pythonⁱ | - | 2ⁿᵈ | ✓ | ✓ | ✓ | ✓ | S |
+| TeNPy | Python | [31](https://github.com/tenpy/tenpy) | 2ⁿᵈ | ✓ | - | ✓ | ✓ | - |
+| tensor-tools | C++ | [32](https://github.com/tensor-tools/tensor-tools) | 2ⁿᵈ | ✓ | - | ✓ | ✓ | - |
+| TensorTrack | MATLAB | [33](https://github.com/TensorTrack/TensorTrack) | 2ⁿᵈ | ✓ | ✓ | ✓ | - | - |
+| UltraDMRG | C++ | [34](https://github.com/ultradmrg/ultradmrg) | 2ⁿᵈ | ✓ | - | ✓ | ✓ | S |
+| xDMRG++ | C++ | [35](https://github.com/xdmrgpp/xdmrgpp) | 2ⁿᵈ | - | - | ✓ | - | - |
 
 Table key:
-
-* **ID:** A unique identifier for cross-referencing purposes.
 
 * **Name:** The official name of the package, except for unnamed packages 7 and 13.
 
@@ -87,44 +85,44 @@ Table key:
 
 Support for parallelism strategies and mixed-precision optimization techniques.
 
-| ID | Name | HPC | | | Parallelism | | | | | MP |
-|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| | | SM | DM | GPU | i | ii | iii | iv | v | |
-| 1 | ALPS DMRG | ✓ | - | - | ✓ | - | - | - | - | - |
-| 2 | ALPS MPS | ✓ | - | - | ✓ | ✓ | - | - | - | - |
-| 3 | BAGEL | ✓ | ✓ | - | ✓ | - | - | - | - | - |
-| 4 | Block2 | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| 5 | CheMPS2 | ✓ | ✓ | - | - | ✓ | ✓ | - | - | - |
-| 6 | ChemTensor | ✓ | - | - | - | ✓ | - | ✓ | - | - |
-| 7 | Chen et al. | ✓ | - | S | ✓ | ✓ | - | - | ✓ | - |
-| 8 | Cytnx | ✓ | - | S | ✓ | ✓ | ✓ | - | - | - |
-| 9 | DMRG-Budapest | ✓ | ✓ | M | ✓ | ✓ | ✓ | ✓ | - | ✓ |
-| 10 | DMRG++ | ✓ | - | S | ✓ | ✓ | - | - | - | - |
-| 11 | DMRGPy | ✓ | - | - | ✓ | - | - | - | - | - |
-| 12 | FOCUS | ✓ | ✓ | M | ✓ | ✓ | ✓ | - | - | - |
-| 13 | Hong et al. | - | - | S | ✓ | - | - | - | - | - |
-| 14 | ITensor | ✓ | - | - | ✓ | ✓ | - | - | - | - |
-| 15 | ITensorMPS.jl | ✓ | - | S | ✓ | ✓ | - | - | - | ✓ |
-| 16 | Kylin | ✓ | - | - | - | ✓ | ✓ | - | - | ✓ |
-| 17 | MOLMPS | ✓ | ✓ | S | ✓ | ✓ | ✓ | - | - | - |
-| 18 | MPSKit.jl | ✓ | - | - | ✓ | ✓ | - | ✓ | - | - |
-| 19 | MPToolkit | ✓ | - | - | ✓ | ✓ | - | - | - | - |
-| 20 | OSMPS | ✓ | ✓ | - | ✓ | ✓ | - | - | - | - |
-| 21 | PyTeNet | ✓ | - | - | ✓ | - | - | - | - | - |
-| 22 | QCMaquis | ✓ | - | - | - | ✓ | ✓ | ✓ | - | - |
-| 23 | QSpace | ✓ | - | - | ✓ | ✓ | - | - | - | ✓ |
-| 24 | Quantum TEA | ✓ | - | S | ✓ | - | - | - | - | ✓ |
-| 25 | quimb | ✓ | - | - | ✓ | - | - | - | - | - |
-| 26 | Renormalizer | ✓ | - | S | ✓ | - | - | - | - | - |
-| 27 | SeeMPS2 | ✓ | - | - | ✓ | - | - | - | - | - |
-| 28 | SUNDMRG.jl | ✓ | ✓ | S | ✓ | ✓ | - | - | - | - |
-| 29 | SymMPS | ✓ | - | - | ✓ | ✓ | - | - | - | - |
-| 30 | SyTen | ✓ | ✓ | S | ✓ | ✓ | - | ✓ | ✓ | - |
-| 31 | TeNPy | ✓ | ✓ | - | ✓ | ✓ | - | ✓ | - | - |
-| 32 | tensor-tools | ✓ | ✓ | - | ✓ | - | - | - | - | - |
-| 33 | TensorTrack | ✓ | - | - | ✓ | - | - | - | - | - |
-| 34 | UltraDMRG | ✓ | ✓ | S | ✓ | ✓ | - | ✓ | - | - |
-| 35 | xDMRG++ | ✓ | - | - | ✓ | - | - | - | - | - |
+| Name | HPC | | | Parallelism | | | | | MP |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| | SM | DM | GPU | i | ii | iii | iv | v | |
+| ALPS DMRG | ✓ | - | - | ✓ | - | - | - | - | - |
+| ALPS MPS | ✓ | - | - | ✓ | ✓ | - | - | - | - |
+| BAGEL | ✓ | ✓ | - | ✓ | - | - | - | - | - |
+| Block2 | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| CheMPS2 | ✓ | ✓ | - | - | ✓ | ✓ | - | - | - |
+| ChemTensor | ✓ | - | - | - | ✓ | - | ✓ | - | - |
+| Chen et al. | ✓ | - | S | ✓ | ✓ | - | - | ✓ | - |
+| Cytnx | ✓ | - | S | ✓ | ✓ | ✓ | - | - | - |
+| DMRG-Budapest | ✓ | ✓ | M | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| DMRG++ | ✓ | - | S | ✓ | ✓ | - | - | - | - |
+| DMRGPy | ✓ | - | - | ✓ | - | - | - | - | - |
+| FOCUS | ✓ | ✓ | M | ✓ | ✓ | ✓ | - | - | - |
+| Hong et al. | - | - | S | ✓ | - | - | - | - | - |
+| ITensor | ✓ | - | - | ✓ | ✓ | - | - | - | - |
+| ITensorMPS.jl | ✓ | - | S | ✓ | ✓ | - | - | - | ✓ |
+| Kylin | ✓ | - | - | - | ✓ | ✓ | - | - | ✓ |
+| MOLMPS | ✓ | ✓ | S | ✓ | ✓ | ✓ | - | - | - |
+| MPSKit.jl | ✓ | - | - | ✓ | ✓ | - | ✓ | - | - |
+| MPToolkit | ✓ | - | - | ✓ | ✓ | - | - | - | - |
+| OSMPS | ✓ | ✓ | - | ✓ | ✓ | - | - | - | - |
+| PyTeNet | ✓ | - | - | ✓ | - | - | - | - | - |
+| QCMaquis | ✓ | - | - | - | ✓ | ✓ | ✓ | - | - |
+| QSpace | ✓ | - | - | ✓ | ✓ | - | - | - | ✓ |
+| Quantum TEA | ✓ | - | S | ✓ | - | - | - | - | ✓ |
+| quimb | ✓ | - | - | ✓ | - | - | - | - | - |
+| Renormalizer | ✓ | - | S | ✓ | - | - | - | - | - |
+| SeeMPS2 | ✓ | - | - | ✓ | - | - | - | - | - |
+| SUNDMRG.jl | ✓ | ✓ | S | ✓ | ✓ | - | - | - | - |
+| SymMPS | ✓ | - | - | ✓ | ✓ | - | - | - | - |
+| SyTen | ✓ | ✓ | S | ✓ | ✓ | - | ✓ | ✓ | - |
+| TeNPy | ✓ | ✓ | - | ✓ | ✓ | - | ✓ | - | - |
+| tensor-tools | ✓ | ✓ | - | ✓ | - | - | - | - | - |
+| TensorTrack | ✓ | - | - | ✓ | - | - | - | - | - |
+| UltraDMRG | ✓ | ✓ | S | ✓ | ✓ | - | ✓ | - | - |
+| xDMRG++ | ✓ | - | - | ✓ | - | - | - | - | - |
 
 Table key:
 
@@ -144,43 +142,43 @@ We closely follow the classification summary and five-level hierarchy of paralle
 Support for various types of symmetries. Note that support for multiple features does not imply that they can be utilized simultaneously.
 
 
-| ID | Name | U(1) | Z | SU | P | Z2f | Other |
-|---|---|---|---|---|---|---|---|
-| 1 | ALPS DMRG | ✓ | - | - | - | ✓ | - |
-| 2 | ALPS MPS | ✓ | 2 | - | - | ✓ | - |
-| 3 | BAGEL | ✓ | - | - | - | ✓ | - |
-| 4 | Block2 | ✓ | n | 2 | ✓ | ✓ | - |
-| 5 | CheMPS2 | ✓ | - | 2 | ✓ | ✓ | - |
-| 6 | ChemTensor | ✓ | - | 2 | - | - | - |
-| 7 | Chen et al. | ✓ | - | - | - | ✓ | - |
-| 8 | Cytnx | ✓ | n | - | - | ✓ | - |
-| 9 | DMRG-Budapest | ✓ | n | n | ✓ | ✓ | - |
-| 10 | DMRG++ | ✓ | - | - | - | ✓ | - |
-| 11 | DMRGPy | - | - | - | - | ✓ | - |
-| 12 | FOCUS | ✓ | - | 2 | - | ✓ | - |
-| 13 | Hong et al. | - | - | - | - | - | - |
-| 14 | ITensor | ✓ | n | - | - | ✓ | - |
-| 15 | ITensorMPS.jl | ✓ | n | - | - | ✓ | - |
-| 16 | Kylin | ✓ | - | 2 | ✓ | ✓ | - |
-| 17 | MOLMPS | ✓ | - | - | ✓ | ✓ | - |
-| 18 | MPSKit.jl | ✓ | n | n | - | ✓ | Anyonic/Categoric |
-| 19 | MPToolkit | ✓ | n | 2 | - | ✓ | - |
-| 20 | OSMPS | ✓ | 2 | - | - | ✓ | - |
-| 21 | PyTeNet | ✓ | - | - | - | - | - |
-| 22 | QCMaquis | ✓ | 2 | 2 | ✓ | ✓ | - |
-| 23 | QSpace | ✓ | n | n | - | ✓ | SO(n), Sp(2n) |
-| 24 | Quantum TEA | ✓ | n | - | - | ✓ | - |
-| 25 | quimb | - | - | - | - | ✓ | - |
-| 26 | Renormalizer | ✓ | - | - | - | ✓ | - |
-| 27 | SeeMPS2 | - | - | - | - | - | - |
-| 28 | SUNDMRG.jl | - | - | n | - | - | - |
-| 29 | SymMPS | ✓ | - | - | - | ✓ | - |
-| 30 | SyTen | ✓ | n | 2 | - | ✓ | - |
-| 31 | TeNPy | ✓ | n | - | - | ✓ | - |
-| 32 | tensor-tools | ✓ | - | - | - | ✓ | - |
-| 33 | TensorTrack | ✓ | n | n | - | ✓ | - |
-| 34 | UltraDMRG | ✓ | n | - | - | ✓ | - |
-| 35 | xDMRG++ | - | - | - | - | ✓ | - |
+| Name | U(1) | Z | SU | P | Z2f | Other |
+|---|---|---|---|---|---|---|
+| ALPS DMRG | ✓ | - | - | - | ✓ | - |
+| ALPS MPS | ✓ | 2 | - | - | ✓ | - |
+| BAGEL | ✓ | - | - | - | ✓ | - |
+| Block2 | ✓ | n | 2 | ✓ | ✓ | - |
+| CheMPS2 | ✓ | - | 2 | ✓ | ✓ | - |
+| ChemTensor | ✓ | - | 2 | - | - | - |
+| Chen et al. | ✓ | - | - | - | ✓ | - |
+| Cytnx | ✓ | n | - | - | ✓ | - |
+| DMRG-Budapest | ✓ | n | n | ✓ | ✓ | - |
+| DMRG++ | ✓ | - | - | - | ✓ | - |
+| DMRGPy | - | - | - | - | ✓ | - |
+| FOCUS | ✓ | - | 2 | - | ✓ | - |
+| Hong et al. | - | - | - | - | - | - |
+| ITensor | ✓ | n | - | - | ✓ | - |
+| ITensorMPS.jl | ✓ | n | - | - | ✓ | - |
+| Kylin | ✓ | - | 2 | ✓ | ✓ | - |
+| MOLMPS | ✓ | - | - | ✓ | ✓ | - |
+| MPSKit.jl | ✓ | n | n | - | ✓ | Anyonic/Categoric |
+| MPToolkit | ✓ | n | 2 | - | ✓ | - |
+| OSMPS | ✓ | 2 | - | - | ✓ | - |
+| PyTeNet | ✓ | - | - | - | - | - |
+| QCMaquis | ✓ | 2 | 2 | ✓ | ✓ | - |
+| QSpace | ✓ | n | n | - | ✓ | SO(n), Sp(2n) |
+| Quantum TEA | ✓ | n | - | - | ✓ | - |
+| quimb | - | - | - | - | ✓ | - |
+| Renormalizer | ✓ | - | - | - | ✓ | - |
+| SeeMPS2 | - | - | - | - | - | - |
+| SUNDMRG.jl | - | - | n | - | - | - |
+| SymMPS | ✓ | - | - | - | ✓ | - |
+| SyTen | ✓ | n | 2 | - | ✓ | - |
+| TeNPy | ✓ | n | - | - | ✓ | - |
+| tensor-tools | ✓ | - | - | - | ✓ | - |
+| TensorTrack | ✓ | n | n | - | ✓ | - |
+| UltraDMRG | ✓ | n | - | - | ✓ | - |
+| xDMRG++ | - | - | - | - | ✓ | - |
 
 Table key:
 
@@ -196,43 +194,43 @@ Table key:
 
 Support for custom Hamiltonian constructions and the variety of fields for built-in models.
 
-| ID | Name | Construction Custom | Construction Operator | Built-in |
-|---|---|---|---|---|
-| 1 | ALPS DMRG | &#10003; | &#10003; | Specific |
-| 2 | ALPS MPS | - | - | Specific |
-| 3 | BAGEL | - | - | Specific |
-| 4 | Block2 | &#10003; | &#10003; | Broad |
-| 5 | CheMPS2 | - | - | Specific |
-| 6 | ChemTensor | &#10003; | &#10003; | Broad |
-| 7 | Chen et al. | - | - | Broad |
-| 8 | Cytnx | &#10003; | &#10003; | - |
-| 9 | DMRG-Budapest | &#10003; | &#10003; | Broad |
-| 10 | DMRG++ | &#10003; | - | Specific |
-| 11 | DMRGPy | &#10003; | &#10003; | - |
-| 12 | FOCUS | - | - | Specific |
-| 13 | Hong et al. | - | - | Specific |
-| 14 | ITensor | &#10003; | &#10003; | - |
-| 15 | ITensorMPS.jl | &#10003; | &#10003; | - |
-| 16 | Kylin | - | - | Specific |
-| 17 | MOLMPS | - | - | Broad |
-| 18 | MPSKit.jl | &#10003; | &#10003; | Specific |
-| 19 | MPToolkit | &#10003; | - | Broad |
-| 20 | OSMPS | &#10003; | &#10003; | - |
-| 21 | PyTeNet | &#10003; | &#10003; | Broad |
-| 22 | QCMaquis | - | - | Broad |
-| 23 | QSpace | &#10003; | &#10003; | Specific |
-| 24 | Quantum TEA | &#10003; | &#10003; | Specific |
-| 25 | quimb | &#10003; | &#10003; | Specific |
-| 26 | Renormalizer | &#10003; | &#10003; | Broad |
-| 27 | SeeMPS2 | &#10003; | &#10003; | - |
-| 28 | SUNDMRG.jl | - | - | Specific |
-| 29 | SymMPS | &#10003; | - | - |
-| 30 | SyTen | &#10003; | - | - |
-| 31 | TeNPy | &#10003; | &#10003; | Broad |
-| 32 | tensor-tools | &#10003; | &#10003; | - |
-| 33 | TensorTrack | &#10003; | &#10003; | Specific |
-| 34 | UltraDMRG | &#10003; | &#10003; | - |
-| 35 | xDMRG++ | - | - | Specific |
+| Name | Construction Custom | Construction Operator | Built-in |
+|---|---|---|---|
+| ALPS DMRG | &#10003; | &#10003; | Specific |
+| ALPS MPS | - | - | Specific |
+| BAGEL | - | - | Specific |
+| Block2 | &#10003; | &#10003; | Broad |
+| CheMPS2 | - | - | Specific |
+| ChemTensor | &#10003; | &#10003; | Broad |
+| Chen et al. | - | - | Broad |
+| Cytnx | &#10003; | &#10003; | - |
+| DMRG-Budapest | &#10003; | &#10003; | Broad |
+| DMRG++ | &#10003; | - | Specific |
+| DMRGPy | &#10003; | &#10003; | - |
+| FOCUS | - | - | Specific |
+| Hong et al. | - | - | Specific |
+| ITensor | &#10003; | &#10003; | - |
+| ITensorMPS.jl | &#10003; | &#10003; | - |
+| Kylin | - | - | Specific |
+| MOLMPS | - | - | Broad |
+| MPSKit.jl | &#10003; | &#10003; | Specific |
+| MPToolkit | &#10003; | - | Broad |
+| OSMPS | &#10003; | &#10003; | - |
+| PyTeNet | &#10003; | &#10003; | Broad |
+| QCMaquis | - | - | Broad |
+| QSpace | &#10003; | &#10003; | Specific |
+| Quantum TEA | &#10003; | &#10003; | Specific |
+| quimb | &#10003; | &#10003; | Specific |
+| Renormalizer | &#10003; | &#10003; | Broad |
+| SeeMPS2 | &#10003; | &#10003; | - |
+| SUNDMRG.jl | - | - | Specific |
+| SymMPS | &#10003; | - | - |
+| SyTen | &#10003; | - | - |
+| TeNPy | &#10003; | &#10003; | Broad |
+| tensor-tools | &#10003; | &#10003; | - |
+| TensorTrack | &#10003; | &#10003; | Specific |
+| UltraDMRG | &#10003; | &#10003; | - |
+| xDMRG++ | - | - | Specific |
 
 
 Table key:
@@ -245,43 +243,43 @@ Table key:
 
 The eigensolvers used by each package and a comment for bespoke implementations.
 
-| ID | Name | Eigensolver | Comment |
-|---|---|---|---|
-| 1 | ALPS DMRG | Own | Lanczos  |
-| 2 | ALPS MPS | IETL in ALPS | Jacobi–Davidson  |
-| 3 | BAGEL | Own | Davidson |
-| 4 | Block2 | Own | Davidson  |
-| 5 | CheMPS2 | Own | Davidson  |
-| 6 | ChemTensor | Own | Lanczos |
-| 7 | Chen et al. | Own | Davidson |
-| 8 | Cytnx | Own | Lanczos |
-| 9 | DMRG-Budapest | Own, ARPACK | Lanczos, Davidson, etc. |
-| 10 | DMRG++ | Own | Lanczos |
-| 11 | DMRGPy | ITensor (C++/Julia) | - |
-| 12 | FOCUS | Own | Davidson |
-| 13 | Hong et al. | Own | Lanczos |
-| 14 | ITensor | Own | Davidson |
-| 15 | ITensorMPS.jl | KrylovKit.jl | Lanczos, Arnoldi |
-| 16 | Kylin | Own | Lanczos, Davidson |
-| 17 | MOLMPS | Own | Davidson |
-| 18 | MPSKit.jl | KrylovKit.jl | Lanczos, Arnoldi |
-| 19 | MPToolkit | ARPACK | Lanczos, Davidson, etc. |
-| 20 | OSMPS | Own, ARPACK | Lanczos |
-| 21 | PyTeNet | Own | Lanczos |
-| 22 | QCMaquis | ALPS | Jacobi–Davidson |
-| 23 | QSpace | Own | Davidson |
-| 24 | Quantum TEA | Own, SciPy | Lanczos |
-| 25 | quimb | SciPy, slepc4py | Krylov-Schur, Davidson, etc. |
-| 26 | Renormalizer | Own, SciPy | Davidson |
-| 27 | SeeMPS2 | SciPy | Lanczos |
-| 28 | SUNDMRG.jl | Own | Lanczos |
-| 29 | SymMPS | Own | Lanczos |
-| 30 | SyTen | Own | Lanczos, Davidson |
-| 31 | TeNPy | Own, SciPy | Lanczos |
-| 32 | tensor-tools | Own | Davidson |
-| 33 | TensorTrack | Own | Krylov-Schur |
-| 34 | UltraDMRG | Own | Lanczos |
-| 35 | xDMRG++ | PRIMME | Arnoldi, Davidson, etc. |
+| Name | Eigensolver | Comment |
+|---|---|---|
+| ALPS DMRG | Own | Lanczos  |
+| ALPS MPS | IETL in ALPS | Jacobi–Davidson  |
+| BAGEL | Own | Davidson |
+| Block2 | Own | Davidson  |
+| CheMPS2 | Own | Davidson  |
+| ChemTensor | Own | Lanczos |
+| Chen et al. | Own | Davidson |
+| Cytnx | Own | Lanczos |
+| DMRG-Budapest | Own, ARPACK | Lanczos, Davidson, etc. |
+| DMRG++ | Own | Lanczos |
+| DMRGPy | ITensor (C++/Julia) | - |
+| FOCUS | Own | Davidson |
+| Hong et al. | Own | Lanczos |
+| ITensor | Own | Davidson |
+| ITensorMPS.jl | KrylovKit.jl | Lanczos, Arnoldi |
+| Kylin | Own | Lanczos, Davidson |
+| MOLMPS | Own | Davidson |
+| MPSKit.jl | KrylovKit.jl | Lanczos, Arnoldi |
+| MPToolkit | ARPACK | Lanczos, Davidson, etc. |
+| OSMPS | Own, ARPACK | Lanczos |
+| PyTeNet | Own | Lanczos |
+| QCMaquis | ALPS | Jacobi–Davidson |
+| QSpace | Own | Davidson |
+| Quantum TEA | Own, SciPy | Lanczos |
+| quimb | SciPy, slepc4py | Krylov-Schur, Davidson, etc. |
+| Renormalizer | Own, SciPy | Davidson |
+| SeeMPS2 | SciPy | Lanczos |
+| SUNDMRG.jl | Own | Lanczos |
+| SymMPS | Own | Lanczos |
+| SyTen | Own | Lanczos, Davidson |
+| TeNPy | Own, SciPy | Lanczos |
+| tensor-tools | Own | Davidson |
+| TensorTrack | Own | Krylov-Schur |
+| UltraDMRG | Own | Lanczos |
+| xDMRG++ | PRIMME | Arnoldi, Davidson, etc. |
 
 Table key:
 
