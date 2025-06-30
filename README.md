@@ -1,10 +1,17 @@
-The Software Landscape for the Density Matrix Renormalization Group
-===
+# The Software Landscape for the Density Matrix Renormalization Group
+
 Per Sehlstedt, Jan Brandejs, Lars Karlsson and Paolo Bientinesi\
 pers at cs.umu.se 
 
+This list covers the rapidly expanding DMRG software landscape, comprehensively comparing features of many existing packages. We aim to raise awareness of existing packages and guide researchers in finding a suitable package for their needs while helping developers identify opportunities for collaboration, modularity standardization, and optimization. Despite DMRG’s broad applicability across fields like materials science, quantum chemistry, and quantum computing, many independent implementations have been developed, leading to duplicated efforts and limited interoperability. We highlight key aspects, including parallelism strategies for high-performance computing and symmetry-adapted formulations that enhance efficiency. 
 
-### Table of Contents
+We invite the community to contribute in case of missing software.
+
+Please consider citing the original paper [arXiv:2506.12629](https://arxiv.org/abs/2506.12629).
+<!-- [![ArXiv:2506.12629](https://img.shields.io/badge/arXiv-2506.12629-b31b1b)](https://arxiv.org/abs/2506.12629) -->
+
+## Table of Contents
+
 1. [Packages Implementing DMRG](#packages-implementing-dmrg)
 2. [Feature Comparisons](#feature-comparisons)
     1. [High-level Overview](#high-level-overview)
@@ -14,11 +21,6 @@ pers at cs.umu.se
     5. [Eigensolvers](#eigensolvers)
 3. [References](#references)
 
-This list covers the rapidly expanding DMRG software landscape, comprehensively comparing features of many existing packages. We aim to raise awareness of existing packages and guide researchers in finding a suitable package for their needs while helping developers identify opportunities for collaboration, modularity standardization, and optimization. Despite DMRG’s broad applicability across fields like materials science, quantum chemistry, and quantum computing, many independent implementations have been developed, leading to duplicated efforts and limited interoperability. We highlight key aspects, including parallelism strategies for high-performance computing and symmetry-adapted formulations that enhance efficiency. 
-
-We invite the community to contribute in case of missing open source software.
-
-Please consider citing the original paper [arXiv:2506.12629](https://arxiv.org/abs/2506.12629).
 
 ## Packages Implementing DMRG 
 
@@ -28,19 +30,31 @@ TODO: Somehow make separate (sub)section/list for the packages that are not comp
 
 TODO: Add descriptions for all the packages. As a start, only take the first sentence from arXiv paper and add references? (i.e., don't include the developer info?). Potentially take the last sentence as well.   
 
-TODO: How to do with references? Bad for maintainability to have global numbering? Also don't want to take up too much space by having full titles?
+NOTE: How to do with references? Bad for maintainability to have global numbering? Also don't want to take up too much space by having full titles?
 
 NOTE: As a start, probably include the minimum necessary, and if the developers feel like somthing is missing they can add it themself?
 
+NOTE: Badges?
+[![ArXiv](https://img.shields.io/badge/arXiv-2506.15460-b31b1b)](https://arxiv.org/abs/2503.15460)
+
 - [ALPS](https://github.com/ALPSim/ALPS) (Algorithms and Libraries for Physics Simulations) is a software package aiming to provide standardized components for numerical simulations of condensed matter systems. It contains two separate DMRG packages: *ALPS DMRG* and *ALPS MPS*. [ALPS Webpage](https://alps.comp-phys.org)
 
-    Publications/References/Articles(?): [doi:10.1016/j.jmmm.2006.10.304](http://dx.doi.org/10.1016/j.jmmm.2006.10.304), [doi:10.1088/1742-5468/2011/05/p05001](http://dx.doi.org/10.1088/1742-5468/2011/05/P05001), [doi:10.1016/j.cpc.2014.08.019](http://dx.doi.org/10.1016/j.cpc.2014.08.019)
+    Publications/References/Articles(?): 
+    [doi:10.1016/j.jmmm.2006.10.304](http://dx.doi.org/10.1016/j.jmmm.2006.10.304), 
+    [doi:10.1088/1742-5468/2011/05/p05001](http://dx.doi.org/10.1088/1742-5468/2011/05/P05001), 
+    [doi:10.1016/j.cpc.2014.08.019](http://dx.doi.org/10.1016/j.cpc.2014.08.019)
 
+    Alternatively use badges(?): 
+
+    [![DOI:10.1016/j.jmmm.2006.10.304](https://img.shields.io/badge/DOI-10.1016/j.jmmm.2006.10.304-blue)](http://dx.doi.org/10.1016/j.jmmm.2006.10.304)
+    [![DOI:10.1088/1742-5468/2011/05/p05001](https://img.shields.io/badge/DOI-10.1088/1742--5468/2011/05/p05001-blue)](http://dx.doi.org/10.1088/1742-5468/2011/05/P05001)
+    [![DOI:10.1016/j.cpc.2014.08.019](https://img.shields.io/badge/DOI-10.1016/j.cpc.2014.08.019-blue)](http://dx.doi.org/10.1016/j.cpc.2014.08.019)
 
     <!-- [doi:]() -->
 
 
 ## Feature Comparisons
+
 
 ### High-level Overview
 
