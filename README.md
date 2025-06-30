@@ -1,5 +1,4 @@
-The Software Landscape for the Density Matrix
-Renormalization Group
+The Software Landscape for the Density Matrix Renormalization Group
 ===
 Per Sehlstedt, Jan Brandejs, Lars Karlsson and Paolo Bientinesi\
 pers at cs.umu.se 
