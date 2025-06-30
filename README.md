@@ -4,13 +4,15 @@ Per Sehlstedt, Jan Brandejs, Lars Karlsson and Paolo Bientinesi\
 pers at cs.umu.se 
 
 
-Table of contents
-1. [High-level Overview](#high-level-overview)
-2. [Parallelism and Mixed-Precision](#parallelism-and-mixed-precision)
-3. [Symmetries](#symmetries)
-4. [Hamiltonians](#hamiltonians)
-5. [Eigensolvers](#eigensolvers)
-6. [References](#references)
+### Table of Contents
+1. [Packages Implementing DMRG](#packages-implementing-dmrg)
+2. [Feature Comparisons](#feature-comparisons)
+    1. [High-level Overview](#high-level-overview)
+    2. [Parallelism and Mixed-Precision](#parallelism-and-mixed-precision)
+    3. [Symmetries](#symmetries)
+    4. [Hamiltonians](#hamiltonians)
+    5. [Eigensolvers](#eigensolvers)
+3. [References](#references)
 
 This list covers the rapidly expanding DMRG software landscape, comprehensively comparing features of many existing packages. We aim to raise awareness of existing packages and guide researchers in finding a suitable package for their needs while helping developers identify opportunities for collaboration, modularity standardization, and optimization. Despite DMRG’s broad applicability across fields like materials science, quantum chemistry, and quantum computing, many independent implementations have been developed, leading to duplicated efforts and limited interoperability. We highlight key aspects, including parallelism strategies for high-performance computing and symmetry-adapted formulations that enhance efficiency. 
 
@@ -18,8 +20,19 @@ We invite the community to contribute in case of missing open source software.
 
 Please consider citing the original paper [arXiv:2506.12629](https://arxiv.org/abs/2506.12629).
 
+## Packages Implementing DMRG 
 
-## High-level Overview
+TODO: Something something packages in alphabetical order.
+
+TODO: Somehow make separate (sub)section/list for the packages that are not compared.
+
+TODO: Add descriptions for all the packages. As a start, only take the first sentence from arXiv paper and add references? (i.e., don't include the developer info?). Potentially take the last sentence as well.   
+
+TODO: How to do with references? Bad for maintainability to have global numbering?
+
+## Feature Comparisons
+
+### High-level Overview
 
 High-level aspects of each package. This includes the implementation language and scheme, support for symmetries, and HPC capabilities. Note that support for multiple features does not imply that they can be utilized simultaneously.
 
@@ -82,7 +95,7 @@ Table key:
 * **High-Performance Computing (HPC):** Indicates support for HPC platforms, categorized as shared-memory parallelism (SM), distributed-memory parallelism (DM), and single- (S) or multi- (M) GPU acceleration (GPU).
 
 
-## Parallelism and Mixed-Precision
+### Parallelism and Mixed-Precision
 
 Support for parallelism strategies and mixed-precision optimization techniques.
 
@@ -138,7 +151,7 @@ We closely follow the classification summary and five-level hierarchy of paralle
 
 * **Mixed-precision (MP):** Indicates support for the recently developed mixed-precision optimization technique introduced by Tian et al., where the initial sweeps are accelerated by using reduced floating-point precision. Later sweeps restore full precision by switching to full floating-point precision.
 
-## Symmetries
+### Symmetries
 
 Support for various types of symmetries. Note that support for multiple features does not imply that they can be utilized simultaneously.
 
@@ -190,7 +203,7 @@ Table key:
 
 * **Other**: Indicates support for less common symmetries, such as the special orthogonal group $\mathrm{SO}(n)$, the symplectic group $\mathrm{Sp}(2n)$, and Anyonic symmetries. Anyons are particles with non-trivial exchange statistics that are neither fermions nor bosons.
 
-## Hamiltonians
+### Hamiltonians
 
 Support for custom Hamiltonian constructions and the variety of fields for built-in models.
 
@@ -242,7 +255,7 @@ Table key:
 * **Built-in:** Indicates whether the package contains built-in Hamiltonians that target a specific or broad range of fields.
 
 
-## Eigensolvers
+### Eigensolvers
 
 The eigensolvers used by each package and a comment for bespoke implementations.
 
