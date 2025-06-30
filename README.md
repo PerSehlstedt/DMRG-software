@@ -28,7 +28,17 @@ TODO: Somehow make separate (sub)section/list for the packages that are not comp
 
 TODO: Add descriptions for all the packages. As a start, only take the first sentence from arXiv paper and add references? (i.e., don't include the developer info?). Potentially take the last sentence as well.   
 
-TODO: How to do with references? Bad for maintainability to have global numbering?
+TODO: How to do with references? Bad for maintainability to have global numbering? Also don't want to take up too much space by having full titles?
+
+NOTE: As a start, probably include the minimum necessary, and if the developers feel like somthing is missing they can add it themself?
+
+- [ALPS](https://github.com/ALPSim/ALPS) (Algorithms and Libraries for Physics Simulations) is a software package aiming to provide standardized components for numerical simulations of condensed matter systems. It contains two separate DMRG packages: *ALPS DMRG* and *ALPS MPS*. [ALPS Webpage](https://alps.comp-phys.org)
+
+    Publications/References/Articles(?): [doi:10.1016/j.jmmm.2006.10.304](http://dx.doi.org/10.1016/j.jmmm.2006.10.304), [doi:10.1088/1742-5468/2011/05/p05001](http://dx.doi.org/10.1088/1742-5468/2011/05/P05001), [doi:10.1016/j.cpc.2014.08.019](http://dx.doi.org/10.1016/j.cpc.2014.08.019)
+
+
+    <!-- [doi:]() -->
+
 
 ## Feature Comparisons
 
