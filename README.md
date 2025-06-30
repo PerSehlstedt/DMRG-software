@@ -6,9 +6,9 @@ pers at cs.umu.se
 
 
 Table of contents
-1. [High-level overview](#high-level-overview)
-2. [Parallelization strategy](#parallelization-strategy)
-3. [Symmetry support](#symmetry-support)
+1. [High-level Overview](#high-level-overview)
+2. [Parallelism and Mixed-Precision](#parallelism-and-mixed-precision)
+3. [Symmetries](#symmetries)
 4. [Hamiltonians](#hamiltonians)
 5. [Eigensolvers](#eigensolvers)
 6. [References](#references)
@@ -20,7 +20,7 @@ We invite the community to contribute in case of missing open source software.
 Please consider citing the original paper [arXiv:2506.12629](https://arxiv.org/abs/2506.12629).
 
 
-## High-level overview
+## High-level Overview
 
 High-level aspects of each package. This includes the implementation language and scheme, support for symmetries, and HPC capabilities. Note that support for multiple features does not imply that they can be utilized simultaneously.
 
@@ -82,7 +82,7 @@ Table key:
 * **High-Performance Computing (HPC):** Indicates support for HPC platforms, categorized as shared-memory parallelism (SM), distributed-memory parallelism (DM), and single- (S) or multi- (M) GPU acceleration (GPU).
 
 
-## Parallelization strategy
+## Parallelism and Mixed-Precision
 
 Support for parallelism strategies and mixed-precision optimization techniques.
 
@@ -138,10 +138,9 @@ We closely follow the classification summary and five-level hierarchy of paralle
 
 * **Mixed-precision (MP):** Indicates support for the recently developed mixed-precision optimization technique introduced by Tian et al., where the initial sweeps are accelerated by using reduced floating-point precision. Later sweeps restore full precision by switching to full floating-point precision.
 
-## Symmetry support
+## Symmetries
 
 Support for various types of symmetries. Note that support for multiple features does not imply that they can be utilized simultaneously.
-
 
 | Name | U(1) | Z | SU | P | Z2f | Other |
 |---|---|---|---|---|---|---|
