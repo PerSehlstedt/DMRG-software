@@ -39,16 +39,46 @@ NOTE: Badges?
 
 - [ALPS](https://github.com/ALPSim/ALPS) (Algorithms and Libraries for Physics Simulations) is a software package aiming to provide standardized components for numerical simulations of condensed matter systems. It contains two separate DMRG packages: *ALPS DMRG* and *ALPS MPS*. [ALPS Webpage](https://alps.comp-phys.org)
 
-    Publications/References/Articles(?): 
+    Publications/References/Articles(?):
+
     [doi:10.1016/j.jmmm.2006.10.304](http://dx.doi.org/10.1016/j.jmmm.2006.10.304), 
     [doi:10.1088/1742-5468/2011/05/p05001](http://dx.doi.org/10.1088/1742-5468/2011/05/P05001), 
     [doi:10.1016/j.cpc.2014.08.019](http://dx.doi.org/10.1016/j.cpc.2014.08.019)
 
-    Alternatively use badges(?): 
 
-    [![DOI:10.1016/j.jmmm.2006.10.304](https://img.shields.io/badge/DOI-10.1016/j.jmmm.2006.10.304-blue)](http://dx.doi.org/10.1016/j.jmmm.2006.10.304)
-    [![DOI:10.1088/1742-5468/2011/05/p05001](https://img.shields.io/badge/DOI-10.1088/1742--5468/2011/05/p05001-blue)](http://dx.doi.org/10.1088/1742-5468/2011/05/P05001)
-    [![DOI:10.1016/j.cpc.2014.08.019](https://img.shields.io/badge/DOI-10.1016/j.cpc.2014.08.019-blue)](http://dx.doi.org/10.1016/j.cpc.2014.08.019)
+- [BAGEL](https://github.com/qsimulate-open/bagel)
+- [Block2](https://github.com/block-hczhai/block2-preview)
+- [CheMPS2](https://github.com/SebWouters/CheMPS2)
+- [ChemTensor](https://github.com/qc-tum/chemtensor)
+- Chen et al.
+- [Cytnx](https://github.com/Cytnx-dev/Cytnx)
+- DMRG-Budapest
+- [DMRG++](https://github.com/g1257/dmrgpp)
+- [DMRGPy](https://github.com/joselado/dmrgpy)
+- FOCUS
+- Hong et al.
+- [ITensor](https://github.com/ITensor/ITensor)
+- [ITensorMPS.jl](https://github.com/ITensor/ITensorMPS.jl)
+- Kylin
+- MOLMPS
+- [MPSKit.jl](https://github.com/QuantumKitHub/MPSKit.jl)
+- [MPToolkit](https://github.com/mptoolkit/mptoolkit)
+- [OSMPS](https://sourceforge.net/projects/openmps/)
+- [PyTeNet](https://github.com/cmendl/pytenet)
+- [QCMaquis](https://github.com/qcscine/qcmaquis)
+- [QSpace](https://bitbucket.org/qspace4u/workspace/repositories/)
+- [Quantum TEA](https://baltig.infn.it/quantum_tea/quantum_tea)
+- [quimb](https://github.com/jcmgray/quimb)
+- [Renormalizer](https://github.com/shuaigroup/Renormalizer)
+- [SeeMPS2](https://github.com/juanjosegarciaripoll/seemps2)
+- [SUNDMRG.jl](https://github.com/MGYamada/SUNDMRG.jl)
+- [SymMPS](https://www.symmps.eu/)
+- SyTen
+- [TeNPy](https://github.com/tenpy/tenpy)
+- [tensor-tools](https://github.com/ClarkResearchGroup/tensor-tools)
+- [TensorTrack](https://github.com/quantumghent/TensorTrack)
+- [UltraDMRG](https://github.com/QuantumLiquids/UltraDMRG)
+- [xDMRG++](https://github.com/DavidAce/xDMRGpp)
 
     <!-- [doi:]() -->
 
