@@ -28,57 +28,83 @@ TODO: Something something packages in alphabetical order.
 
 TODO: Somehow make separate (sub)section/list for the packages that are not compared.
 
-TODO: Add descriptions for all the packages. As a start, only take the first sentence from arXiv paper and add references? (i.e., don't include the developer info?). Potentially take the last sentence as well.   
+TODO: Make list collapsable (?) Could make each item collapsable (?)
 
 NOTE: How to do with references? Bad for maintainability to have global numbering? Also don't want to take up too much space by having full titles?
 
 NOTE: As a start, probably include the minimum necessary, and if the developers feel like somthing is missing they can add it themself?
 
-NOTE: Badges?
-[![ArXiv](https://img.shields.io/badge/arXiv-2506.15460-b31b1b)](https://arxiv.org/abs/2503.15460)
+Publications/References/Articles(?):
+
+[doi:10.1016/j.jmmm.2006.10.304](http://dx.doi.org/10.1016/j.jmmm.2006.10.304), 
+[doi:10.1088/1742-5468/2011/05/p05001](http://dx.doi.org/10.1088/1742-5468/2011/05/P05001), 
+[doi:10.1016/j.cpc.2014.08.019](http://dx.doi.org/10.1016/j.cpc.2014.08.019)
 
 - [ALPS](https://github.com/ALPSim/ALPS) (Algorithms and Libraries for Physics Simulations) is a software package aiming to provide standardized components for numerical simulations of condensed matter systems. It contains two separate DMRG packages: *ALPS DMRG* and *ALPS MPS*. [ALPS Webpage](https://alps.comp-phys.org)
 
-    Publications/References/Articles(?):
+- [BAGEL](https://github.com/qsimulate-open/bagel) (Brilliantly Advanced General Electronic-structure Library) is an electronic structure package. In its DMRG implementation, sites are individual molecules that collect multiple orbitals. 
 
-    [doi:10.1016/j.jmmm.2006.10.304](http://dx.doi.org/10.1016/j.jmmm.2006.10.304), 
-    [doi:10.1088/1742-5468/2011/05/p05001](http://dx.doi.org/10.1088/1742-5468/2011/05/P05001), 
-    [doi:10.1016/j.cpc.2014.08.019](http://dx.doi.org/10.1016/j.cpc.2014.08.019)
+- [Block2](https://github.com/block-hczhai/block2-preview) aims to provide a comprehensive set of DMRG algorithms for use in electronic structure methods and other applications. It can interface with other quantum chemistry packages to enable hybrid DMRG methods, including [PySCF](https://github.com/pyscf/pyscf), [OpenMOLCAS](https://github.com/Molcas/OpenMolcas), and [Forte](https://github.com/evangelistalab/forte).
 
+- [CheMPS2](https://github.com/SebWouters/CheMPS2) is a library containing a DMRG implementation for ab initio quantum chemistry. It can interface with quantum chemistry packages that can handle R(O)HF calculations and molecular orbital matrix elements, and this has been done for [Psi4](https://github.com/psi4/psi4) and [PySCF](https://github.com/pyscf/pyscf).
 
-- [BAGEL](https://github.com/qsimulate-open/bagel)
-- [Block2](https://github.com/block-hczhai/block2-preview)
-- [CheMPS2](https://github.com/SebWouters/CheMPS2)
-- [ChemTensor](https://github.com/qc-tum/chemtensor)
-- Chen et al.
-- [Cytnx](https://github.com/Cytnx-dev/Cytnx)
-- DMRG-Budapest
-- [DMRG++](https://github.com/g1257/dmrgpp)
-- [DMRGPy](https://github.com/joselado/dmrgpy)
-- FOCUS
-- Hong et al.
-- [ITensor](https://github.com/ITensor/ITensor)
-- [ITensorMPS.jl](https://github.com/ITensor/ITensorMPS.jl)
-- Kylin
-- MOLMPS
-- [MPSKit.jl](https://github.com/QuantumKitHub/MPSKit.jl)
-- [MPToolkit](https://github.com/mptoolkit/mptoolkit)
-- [OSMPS](https://sourceforge.net/projects/openmps/)
-- [PyTeNet](https://github.com/cmendl/pytenet)
-- [QCMaquis](https://github.com/qcscine/qcmaquis)
-- [QSpace](https://bitbucket.org/qspace4u/workspace/repositories/)
-- [Quantum TEA](https://baltig.infn.it/quantum_tea/quantum_tea)
-- [quimb](https://github.com/jcmgray/quimb)
-- [Renormalizer](https://github.com/shuaigroup/Renormalizer)
-- [SeeMPS2](https://github.com/juanjosegarciaripoll/seemps2)
-- [SUNDMRG.jl](https://github.com/MGYamada/SUNDMRG.jl)
-- [SymMPS](https://www.symmps.eu/)
-- SyTen
-- [TeNPy](https://github.com/tenpy/tenpy)
-- [tensor-tools](https://github.com/ClarkResearchGroup/tensor-tools)
-- [TensorTrack](https://github.com/quantumghent/TensorTrack)
-- [UltraDMRG](https://github.com/QuantumLiquids/UltraDMRG)
-- [xDMRG++](https://github.com/DavidAce/xDMRGpp)
+- [ChemTensor](https://github.com/qc-tum/chemtensor) is a package for tensor network algorithms centered around chemical systems.
+
+- Chen et al. presents a hybrid parallel implementation of DMRG with custom subroutines for vector operations on the GPU for improved performance. More recently, they also presented a novel approach to real-space parallel DMRG, building upon the work of Stoudenmire and White.
+
+- [Cytnx](https://github.com/Cytnx-dev/Cytnx) is a tensor network library designed for classical and quantum physics simulations. The package has interfaces similar to popular libraries like [NumPy](https://github.com/numpy/numpy), [SciPy](https://github.com/scipy/scipy), and [PyTorch](https://github.com/pytorch/pytorch).
+
+- DMRG-Budapest is a package for general quantum many-body problems. It features various novel in-house optimization techniques to improve performance.
+
+- [DMRG++](https://github.com/g1257/dmrgpp) implements the DMRG algorithm with an emphasis on generic programming and minimal software dependencies. Additionally, the package has a plug-in, [DMRG++PluginSc](https://code.ornl.gov/gonzalo_3/dmrgppPluginSc), to extend its capabilities to GPUs.
+
+- [DMRGPy](https://github.com/joselado/dmrgpy) is a library to simulate quasi-one-dimensional spin chains and fermionic systems.  The library relies on ITensor (either the Julia or the C++ version).
+
+- FOCUS implements an ab initio DMRG algorithm. It supports both non-relativistic and relativistic Hamiltonians, utilizing time-reversal symmetry in the latter case to reduce computational costs
+
+- Hong et al. presents a DMRG implementation using various optimization strategies, specifically targeting GPUs with tensor cores.
+
+- ITensor is a package for programming tensor network calculations, allowing users to focus on the connectivity of a tensor network without manually tracking indices. ITensor was initially implemented in C++ but later fully ported to Julia, with most new features first being developed there. The C++ version, [ITensor](https://github.com/ITensor/ITensor), includes DMRG in the main library, while the Julia version provides DMRG through the [ITensorMPS.jl](https://github.com/ITensor/ITensorMPS.jl) extension of [ITensors.jl](https://github.com/ITensor/ITensors.jl). 
+
+- Kylin is an ab initio quantum chemistry software package for estimating the electronic structures of molecular systems. It is specially designed for calculations with large active spaces.
+
+- MOLMPS is a parallel implementation of DMRG for quantum chemistry. The parallel scheme is based on an in-house MPI global memory library and supports various hybrid electronic structure methods.
+
+- [MPSKit.jl](https://github.com/QuantumKitHub/MPSKit.jl) contains tensor network algorithms for one-dimensional quantum and two-dimensional statistical mechanics problems. It mainly builds upon [TensorKit.jl](https://github.com/Jutho/TensorKit.jl), which provides functionality for generic symmetries, and its capabilities can be extended with packages like [SUNRepresentations.jl](https://github.com/QuantumKitHub/SUNRepresentations.jl) and [MPSKitModels.jl](https://github.com/QuantumKitHub/MPSKitModels.jl).
+
+- [MPToolkit](https://github.com/mptoolkit/mptoolkit) (Matrix Product Toolkit) is a package for creating and manipulating MPS. It was initially envisioned as a "next-generation" DMRG code that integrates non-abelian symmetries and emphasizes a flexible, general approach to constructing Hamiltonian operators and measuring observables.
+
+- [OSMPS](https://sourceforge.net/projects/openmps/) (Open Source MPS) is a collection of tensor network algorithms for simulating entangled one-dimensional many-body quantum systems. The initial focus was to offer a broad set of methods for quantum simulators based on atomic, molecular, and optical physics architectures.
+
+- [PyTeNet](https://github.com/cmendl/pytenet) implements quantum tensor network operations and simulations structured around MPS and MPO classes. It acts as a facilitator of algorithmic experimentation. 
+
+- [QCMaquis](https://github.com/qcscine/qcmaquis) is a SCINE module that builds upon the *ALPS MPS* code and implements various DMRG-based algorithms. Key features include vibrational, time-dependent, and nuclear-electron DMRG, and it accommodates non-relativistic and relativistic electronic structure calculations.
+
+- [QSpace](https://bitbucket.org/qspace4u/workspace/repositories/) is a tensor library designed as a bottom-up approach for non-abelian symmetries, starting from the defining representation and the respective Lie algebra. A distinctive feature is its versatility in operations across all symmetries, permitting arbitrary combinations.
+
+- [Quantum TEA](https://baltig.infn.it/quantum_tea/quantum_tea) (Quantum Tensor network Emulator Applications) is a set of tensor network packages for quantum simulation, circuit emulation, and machine learning applications. Supplementary libraries extend their capabilities with diverse tensor backends to enable computations on CPUs, GPUs, and TPUs.
+
+- [quimb](https://github.com/jcmgray/quimb) is a library for quantum information and many-body calculations, focusing primarily on tensor networks. While its DMRG routine does not currently support features commonly found in other packages, [quimb](https://github.com/jcmgray/quimb) is compatible with complementary libraries like [cotengra](https://github.com/jcmgray/cotengra), [autoray](https://github.com/jcmgray/autoray), and [symmray](https://github.com/jcmgray/symmray) to support efficient tensor network contraction, and various backend array libraries supporting block-sparse, abelian-symmetric, and fermionic representations.
+
+- [Renormalizer](https://github.com/shuaigroup/Renormalizer) is a tensor network package with a focus on electron-phonon quantum dynamics. It implements an original MPO/TTNO construction algorithm that leverages bipartite graph theory to automate and optimize the selection of normal and complementary operators for custom Hamiltonians in the sum-of-products form, a feature later adopted by several other software packages.
+
+- [SeeMPS2](https://github.com/juanjosegarciaripoll/seemps2) is the second iteration of the SElf-Explaining Matrix-Product-State library. It aims to enable rapid prototyping and testing of MPS and DMRG-inspired algorithms.
+
+- [SUNDMRG.jl](https://github.com/MGYamada/SUNDMRG.jl) is a DMRG implementation specializing in a full $\mathrm{SU}(n)$ symmetry.
+
+- [SymMPS](https://www.symmps.eu/) builds upon the Scientific Parallel Algorithms Library ([SciPAL](https://github.com/SciPAL/SciPAL)). It features an original construction scheme for MPO representations of arbitrary $\mathrm{U}(1)$-symmetric operators whenever there is an expression of the local structure in terms of a finite-state machine.
+
+- SyTen aims to be a tensor network toolkit with standard MPS, binary TTNS, and infinite PEPS utilities.
+
+- [TeNPy](https://github.com/tenpy/tenpy) (Tensor Network Python) is a library for simulating strongly correlated quantum systems with tensor networks. TeNPy's philosophy is to balance readability and usability for newcomers while providing powerful algorithms for experts.
+
+- [tensor-tools](https://github.com/ClarkResearchGroup/tensor-tools) is a tensor network library that builds upon the Cyclops Tensor Framework ([CTF](https://github.com/cyclops-community/ctf)).
+
+- [TensorTrack](https://github.com/quantumghent/TensorTrack) is a package implementing various elementary algorithms that arise in the context of tensor networks. The package supports generic symmetries, including symmetry groups with multiplicities, which can have either bosonic or fermionic braiding rules.
+
+- [UltraDMRG](https://github.com/QuantumLiquids/UltraDMRG) is a library for performing large-scale calculations using one-dimensional tensor network algorithms. It uses [TensorToolkit](https://github.com/QuantumLiquids/TensorToolkit) for tensor operations and is specifically designed to tackle two-dimensional strongly correlated electron systems.
+
+- [xDMRG++](https://github.com/DavidAce/xDMRGpp) is a package that includes various MPS algorithms for studying one-dimensional quantum spin chains.
 
     <!-- [doi:]() -->
 
