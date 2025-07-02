@@ -236,6 +236,11 @@ Please consider citing the original paper [arXiv:2506.12629](https://arxiv.org/a
     <details><summary><i> Related publications: </i></summary>
 </details>
 
+- [YASTN](https://github.com/yastn/yastn) (Yet another symmetric tensor networks) is a package for differentiable linear algebra with block-sparse tensors, supporting abelian symmetries. The package mainly focuses on PEPS, but also supports a range of MPS algorithms.
+    <details><summary><i> Related publications: </i></summary>
+    YASTN: Yet another symmetric tensor networks; A Python library for Abelian symmetric tensor network calculations, 2025, <a href="http://dx.doi.org/10.21468/SciPostPhysCodeb.52">doi:10.21468/scipostphyscodeb.52</a><br>
+</details>
+
 <!-- TODO: Somehow make separate (sub)section/list for the packages that are not compared. -->
 
 ## Feature Comparisons
@@ -282,6 +287,7 @@ High-level aspects of each package. This includes the implementation language an
 | [TensorTrack](https://github.com/quantumghent/TensorTrack) | MATLAB | ✓ | 2<sup>nd</sup> | ✓ | ✓ | ✓ | - | - |
 | [UltraDMRG](https://github.com/QuantumLiquids/UltraDMRG) | C++ | ✓ | 2<sup>nd</sup> | ✓ | - | ✓ | ✓ | S |
 | [xDMRG++](https://github.com/DavidAce/xDMRGpp) | C++ | ✓ | 2<sup>nd</sup> | - | - | ✓ | - | - |
+| [YASTN](https://github.com/yastn/yastn) | Python | ✓ | 2<sup>nd</sup> | ✓ | - | ✓ | - | S |
 
 Table key:
 
@@ -345,6 +351,7 @@ Support for parallelism strategies and mixed-precision optimization techniques.
 | TensorTrack | ✓ | - | - | ✓ | - | - | - | - | - |
 | UltraDMRG | ✓ | ✓ | S | ✓ | ✓ | - | ✓ | - | - |
 | xDMRG++ | ✓ | - | - | ✓ | - | - | - | - | - |
+| YASTN | ✓ | - | S | ✓ | - | - | - | - | - |
 
 Table key:
 
@@ -400,6 +407,7 @@ Support for various types of symmetries. Note that support for multiple features
 | TensorTrack | ✓ | n | n | - | ✓ | - |
 | UltraDMRG | ✓ | n | - | - | ✓ | - |
 | xDMRG++ | - | - | - | - | ✓ | - |
+| YASTN | ✓ | n | - | - | ✓ | - |
 
 Table key:
 
@@ -453,6 +461,7 @@ Support for custom Hamiltonian constructions and the variety of fields for built
 | TensorTrack | ✓ | ✓ | Specific |
 | UltraDMRG | ✓ | ✓ | - |
 | xDMRG++ | - | - | Specific |
+| YASTN | ✓ | ✓ | - |
 
 
 Table key:
@@ -504,6 +513,7 @@ The eigensolvers used by each package and a comment for bespoke implementations.
 | TensorTrack | Own | Krylov-Schur |
 | UltraDMRG | Own | Lanczos |
 | xDMRG++ | PRIMME | Arnoldi, Davidson, etc. |
+| YASTN | Own | Lanczos |
 
 Table key:
 
