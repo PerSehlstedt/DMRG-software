@@ -24,10 +24,6 @@ Please consider citing the original paper [arXiv:2506.12629](https://arxiv.org/a
 
 ## Packages Implementing DMRG 
 
-TODO: Something something packages in alphabetical order.
-
-TODO: Somehow make separate (sub)section/list for the packages that are not compared.
-
 <!-- IDEA: Potentially give "Related publications:" a more encompassing name to enable inclusion of webpages and other 'useful' links (?) -->
 
 - [ALPS](https://github.com/ALPSim/ALPS) (Algorithms and Libraries for Physics Simulations) is a software package aiming to provide standardized components for numerical simulations of condensed matter systems. It contains two separate DMRG packages: *ALPS DMRG* and *ALPS MPS*.
@@ -240,8 +236,9 @@ TODO: Somehow make separate (sub)section/list for the packages that are not comp
     <details><summary><i> Related publications: </i></summary>
 </details>
 
-## Feature Comparisons
+<!-- TODO: Somehow make separate (sub)section/list for the packages that are not compared. -->
 
+## Feature Comparisons
 
 ### High-Level Overview
 
