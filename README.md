@@ -14,7 +14,7 @@ Please consider citing the original paper [arXiv:2506.12629](https://arxiv.org/a
 
 1. [Packages Implementing DMRG](#packages-implementing-dmrg)
 2. [Feature Comparisons](#feature-comparisons)
-    1. [High-level Overview](#high-level-overview)
+    1. [High-Level Overview](#high-level-overview)
     2. [Parallelism and Mixed-Precision](#parallelism-and-mixed-precision)
     3. [Symmetries](#symmetries)
     4. [Hamiltonians](#hamiltonians)
@@ -112,7 +112,7 @@ Publications/References/Articles(?):
 ## Feature Comparisons
 
 
-### High-level Overview
+### High-Level Overview
 
 High-level aspects of each package. This includes the implementation language and scheme, support for symmetries, and HPC capabilities. Note that support for multiple features does not imply that they can be utilized simultaneously.
 
