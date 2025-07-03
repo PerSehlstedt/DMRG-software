@@ -149,6 +149,11 @@ Please consider citing the original paper [arXiv:2506.12629](https://arxiv.org/a
     PyTeNet: A concise Python implementation of quantum tensor network algorithms, 2018, <a href="http://dx.doi.org/10.21105/joss.00948">doi:10.21105/joss.00948</a><br>
 </details>
 
+- [pyTTN](https://gitlab.npl.co.uk/qsm/pyttn) is a package for working with generic TTNS to efficiently compute dynamical properties of quantum systems. It also provides functionality for merging many physical modes into a single site, which can be useful when handling weakly correlated subsystems, where there is a strong correlation between the degrees of freedom in each subsystem. 
+    <details><summary><i> Related publications: </i></summary>
+    pyTTN: An Open Source Toolbox for Open and Closed System Quantum Dynamics Simulations Using Tree Tensor Network, 2025, <a href="https://arxiv.org/abs/2503.15460">doi:10.48550/ARXIV.2503.15460</a><br>
+</details>
+
 - [QCMaquis](https://github.com/qcscine/qcmaquis) is a SCINE module that builds upon the *ALPS MPS* code and implements various DMRG-based algorithms. Key features include vibrational, time-dependent, and nuclear-electron DMRG, and it accommodates non-relativistic and relativistic electronic structure calculations.
 [QCMaquis Webpage](https://scine.ethz.ch/download/qcmaquis).
     <details><summary><i> Related publications: </i></summary>
@@ -273,6 +278,7 @@ High-level aspects of each package. This includes the implementation language an
 | [MPToolkit](https://github.com/mptoolkit/mptoolkit) | C++ | ✓ | 2<sup>nd</sup> | ✓ | ✓ | ✓ | - | - |
 | [OSMPS](https://sourceforge.net/projects/openmps/) | Fortran, Python<sup>i</sup> | ✓ | 2<sup>nd</sup> | ✓ | - | ✓ | ✓ | - |
 | [PyTeNet](https://github.com/cmendl/pytenet) | Python | ✓ | 2<sup>nd</sup> | ✓ | - | ✓ | - | - |
+| [pyTTN](https://gitlab.npl.co.uk/qsm/pyttn) | C++, Python<sup>i</sup> | ✓ | 2<sup>nd</sup> | - | - | ✓ | - | - |
 | [QCMaquis](https://github.com/qcscine/qcmaquis) | C++ | ✓ | 2<sup>nd</sup> | ✓ | ✓ | ✓ | - | - |
 | [QSpace](https://bitbucket.org/qspace4u/workspace/repositories/) | C++, MATLAB<sup>i</sup> | ✓ | 2<sup>nd</sup>‡ | ✓ | ✓ | ✓ | - | - |
 | [Quantum TEA](https://baltig.infn.it/quantum_tea/quantum_tea) | Fortran, Python<sup>i</sup> | ✓ | 2<sup>nd</sup>† | ✓ | - | ✓ | - | S |
@@ -337,6 +343,7 @@ Support for parallelism strategies and mixed-precision optimization techniques.
 | MPToolkit | ✓ | - | - | ✓ | ✓ | - | - | - | - |
 | OSMPS | ✓ | ✓ | - | ✓ | ✓ | - | - | - | - |
 | PyTeNet | ✓ | - | - | ✓ | - | - | - | - | - |
+| pyTTN | ✓ | - | - | ✓ | - | - | ✓ | - | - |
 | QCMaquis | ✓ | - | - | - | ✓ | ✓ | ✓ | - | - |
 | QSpace | ✓ | - | - | ✓ | ✓ | - | - | - | ✓ |
 | Quantum TEA | ✓ | - | S | ✓ | - | - | - | - | ✓ |
@@ -393,6 +400,7 @@ Support for various types of symmetries. Note that support for multiple features
 | MPToolkit | ✓ | n | 2 | - | ✓ | - |
 | OSMPS | ✓ | 2 | - | - | ✓ | - |
 | PyTeNet | ✓ | - | - | - | - | - |
+| pyTTN | - | - | - | - | ✓ | - |
 | QCMaquis | ✓ | 2 | 2 | ✓ | ✓ | - |
 | QSpace | ✓ | n | n | - | ✓ | SO(n), Sp(2n) |
 | Quantum TEA | ✓ | n | - | - | ✓ | - |
@@ -447,6 +455,7 @@ Support for custom Hamiltonian constructions and the variety of fields for built
 | MPToolkit | ✓ | - | Broad |
 | OSMPS | ✓ | ✓ | - |
 | PyTeNet | ✓ | ✓ | Broad |
+| pyTTN | ✓ | ✓ | Broad |
 | QCMaquis | - | - | Broad |
 | QSpace | ✓ | ✓ | Specific |
 | Quantum TEA | ✓ | ✓ | Specific |
@@ -499,6 +508,7 @@ The eigensolvers used by each package and a comment for bespoke implementations.
 | MPToolkit | ARPACK | Lanczos, Davidson, etc. |
 | OSMPS | Own, ARPACK | Lanczos |
 | PyTeNet | Own | Lanczos |
+| pyTTN | Own | Arnoldi |
 | QCMaquis | ALPS | Jacobi–Davidson |
 | QSpace | Own | Davidson |
 | Quantum TEA | Own, SciPy | Lanczos |
