@@ -7,8 +7,7 @@ This list covers the rapidly expanding DMRG software landscape, comprehensively 
 
 We invite the community to contribute in case of missing software.
 
-Please consider citing the original paper [arXiv:2506.12629](https://arxiv.org/abs/2506.12629).
-<!-- [![ArXiv:2506.12629](https://img.shields.io/badge/arXiv-2506.12629-b31b1b)](https://arxiv.org/abs/2506.12629) -->
+Please consider citing the original paper: *The software landscape for the density matrix renormalization group*, 2026, [doi:10.1016/j.cpc.2026.110136](https://doi.org/10.1016/j.cpc.2026.110136).
 
 ## Table of Contents
 
