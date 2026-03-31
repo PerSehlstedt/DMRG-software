@@ -166,6 +166,7 @@ Please consider citing the original paper [arXiv:2506.12629](https://arxiv.org/a
     Nuclear-electronic all-particle density matrix renormalization group, 2020, <a href="http://dx.doi.org/10.1063/5.0007166">doi:10.1063/5.0007166</a><br>
     Excited-State DMRG Made Simple with FEAST, 2021, <a href="http://dx.doi.org/10.1021/acs.jctc.1c00984">doi:10.1021/acs.jctc.1c00984</a><br>
     Quantum Proton Effects from Density Matrix Renormalization Group Calculations, 2022, <a href="http://dx.doi.org/10.1021/acs.jctc.1c00913">doi:10.1021/acs.jctc.1c00913</a><br>
+    QCMaquis 4.0: Multipurpose Electronic, Vibrational, and Vibronic Structure and Dynamics Calculations with the Density Matrix Renormalization Group, 2025, <a href="https://doi.org/10.1021/acs.jpca.5c02970">doi:10.1021/acs.jpca.5c02970</a><br>
 </details>
 
 - [QSpace](https://bitbucket.org/qspace4u/workspace/repositories/) is a tensor library designed as a bottom-up approach for non-abelian symmetries, starting from the defining representation and the respective Lie algebra. A distinctive feature is its versatility in operations across all symmetries, permitting arbitrary combinations.
@@ -279,7 +280,7 @@ High-level aspects of each package. This includes the implementation language an
 | [OSMPS](https://sourceforge.net/projects/openmps/) | Fortran, Python<sup>i</sup> | ✓ | 2<sup>nd</sup> | ✓ | - | ✓ | ✓ | - |
 | [PyTeNet](https://github.com/cmendl/pytenet) | Python | ✓ | 2<sup>nd</sup> | ✓ | - | ✓ | - | - |
 | [pyTTN](https://gitlab.npl.co.uk/qsm/pyttn) | C++, Python<sup>i</sup> | ✓ | 2<sup>nd</sup> | - | - | ✓ | - | - |
-| [QCMaquis](https://github.com/qcscine/qcmaquis) | C++ | ✓ | 2<sup>nd</sup> | ✓ | ✓ | ✓ | - | - |
+| [QCMaquis](https://github.com/qcscine/qcmaquis) | C++, Python<sup>i</sup> | ✓ | 2<sup>nd</sup> | ✓ | ✓ | ✓ | - | - |
 | [QSpace](https://bitbucket.org/qspace4u/workspace/repositories/) | C++, MATLAB<sup>i</sup> | ✓ | 2<sup>nd</sup>‡ | ✓ | ✓ | ✓ | - | - |
 | [Quantum TEA](https://baltig.infn.it/quantum_tea/quantum_tea) | Fortran, Python<sup>i</sup> | ✓ | 2<sup>nd</sup>† | ✓ | - | ✓ | - | S |
 | [quimb](https://github.com/jcmgray/quimb) | Python | ✓ | 2<sup>nd</sup> | - | - | ✓ | - | - |
