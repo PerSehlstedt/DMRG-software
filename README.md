@@ -76,11 +76,12 @@ Please consider citing the original paper [arXiv:2506.12629](https://arxiv.org/a
 
 - DMRG-Budapest is a package for general quantum many-body problems. It features various novel in-house optimization techniques to improve performance.
     <details><summary><i> Related publications: </i></summary>
-    Massively Parallel Tensor Network State Algorithms on Hybrid CPU-GPU Based Architectures, 2023, <a href="https://arxiv.org/abs/2305.05581">doi:10.48550/ARXIV.2305.05581</a><br>
     Two-dimensional quantum lattice models via mode optimized hybrid CPU-GPU density matrix renormalization group method, 2024, <a href="http://dx.doi.org/10.1103/PhysRevB.109.195148">doi:10.1103/physrevb.109.195148</a><br>
     Parallel Implementation of the Density Matrix Renormalization Group Method Achieving a Quarter petaFLOPS Performance on a Single DGX-H100 GPU Node, 2024, <a href="http://dx.doi.org/10.1021/acs.jctc.4c00903">doi:10.1021/acs.jctc.4c00903</a><br>
-    Tensor Network State Algorithms on AI Accelerators, 2024, <a href="http://dx.doi.org/10.1021/acs.jctc.4c00800">doi:10.1021/acs.jctc.4c00800</a><br>
+    Tensor Network State Algorithms on AI Accelerators, 2024, <a href="https://doi.org/10.1021/acs.jctc.4c00800">doi:10.1021/acs.jctc.4c00800</a><br>
     Cost optimized ab initio tensor network state methods: industrial perspectives, 2024, <a href="https://arxiv.org/abs/2412.04676">doi:10.48550/ARXIV.2412.04676</a><br>
+    Massively Parallel Tensor Network State Algorithms on Hybrid CPU-GPU Based Architectures, 2025, <a href="https://doi.org/10.1021/acs.jctc.4c00661">doi:10.1021/acs.jctc.4c00661</a><br>
+    Orbital Optimization of Large Active Spaces via AI-Accelerators, 2025, <a href="https://doi.org/10.1021/acs.jctc.5c00571">doi:10.1021/acs.jctc.5c00571</a><br>
 </details>
 
 - [DMRG++](https://github.com/g1257/dmrgpp) implements the DMRG algorithm with an emphasis on generic programming and minimal software dependencies. Additionally, the package has a plug-in, [DMRG++PluginSc](https://code.ornl.gov/gonzalo_3/dmrgppPluginSc), to extend its capabilities to GPUs.
