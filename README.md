@@ -119,6 +119,8 @@ Please consider citing the original paper [arXiv:2506.12629](https://arxiv.org/a
 [Kylin Webpage](https://kylin-qc.com/).
     <details><summary><i> Related publications: </i></summary>
     Kylin 1.0: An ab‐initio density matrix renormalization group quantum chemistry program, 2023, <a href="http://dx.doi.org/10.1002/jcc.27085">doi:10.1002/jcc.27085</a><br>
+    Kylin-V: An open-source package calculating the dynamic and spectroscopic properties of large systems, 2024, <a href="https://doi.org/10.1063/5.0220712">doi:10.1063/5.0220712</a><br>
+    Recent implementations in kylin 1.3: Improved computational efficiency of ab initio DMRG and a spin-adapted version of EC-MRCI, 2025, <a href="https://doi.org/10.1063/1674-0068/cjcp2506083">doi:10.1063/1674-0068/cjcp2506083</a><br>
 </details>
 
 - MOLMPS is a parallel implementation of DMRG for quantum chemistry. The parallel scheme is based on an in-house MPI global memory library and supports various hybrid electronic structure methods.
