@@ -203,6 +203,7 @@ Please consider citing the original paper [arXiv:2506.12629](https://arxiv.org/a
     <details><summary><i> Related publications: </i></summary>
     Quantum-inspired algorithms for multivariate analysis: from interpolation to partial differential equations, 2021, <a href="http://dx.doi.org/10.22331/q-2021-04-15-431">doi:10.22331/q-2021-04-15-431</a><br>
     Global optimization of MPS in quantum-inspired numerical analysis, 2023, <a href="https://arxiv.org/abs/2303.09430">doi:10.48550/ARXIV.2303.09430</a><br>
+    SeeMPS: A Python-based Matrix Product State and Tensor Train Library, 2026, <a href="https://doi.org/10.48550/arXiv.2601.16734">doi:10.48550/arXiv.2601.16734</a><br>
 </details>
 
 - [SUNDMRG.jl](https://github.com/MGYamada/SUNDMRG.jl) is a DMRG implementation specializing in a full $\mathrm{SU}(n)$ symmetry.
