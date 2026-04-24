@@ -153,7 +153,7 @@ Please consider citing the original paper: *The software landscape for the densi
 
 - [pyTTN](https://gitlab.npl.co.uk/qsm/pyttn) is a package for working with generic TTNS to efficiently compute dynamical properties of quantum systems. It also provides functionality for merging many physical modes into a single site, which can be useful when handling weakly correlated subsystems, where there is a strong correlation between the degrees of freedom in each subsystem. 
     <details><summary><i> Related publications: </i></summary>
-    pyTTN: An Open Source Toolbox for Open and Closed System Quantum Dynamics Simulations Using Tree Tensor Network, 2025, <a href="https://arxiv.org/abs/2503.15460">doi:10.48550/ARXIV.2503.15460</a><br>
+    pyTTN: An open-source toolbox for open and closed system quantum dynamics simulations using tree tensor networks, 2025, <a href="https://doi.org/10.1063/5.0301775">doi:10.1063/5.0301775</a><br>
 </details>
 
 - [QCMaquis](https://github.com/qcscine/qcmaquis) is a SCINE module that builds upon the *ALPS MPS* code and implements various DMRG-based algorithms. Key features include vibrational, time-dependent, and nuclear-electron DMRG, and it accommodates non-relativistic and relativistic electronic structure calculations.
